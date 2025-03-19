@@ -40,6 +40,11 @@ html {
   height: 100%;
 }
 
+::selection {
+  background-color: #000;
+  color: #f7f3ef;
+}
+
 .main {
   position: relative;
   width: 100%;
@@ -59,4 +64,29 @@ html {
 
 .bg {
   background-color: #f7f3ef;
+}
+
+.nav-link {
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  transition: all cubic-bezier(0.39, 0.575, 0.565, 1) 0.3s;
+}
+
+.nav-link:hover {
+  border-radius: 0.5vw;
+  /* color: white; */
+  border-color: #000;
+}
+
+.nav-link:hover::before {
+  top: 0;
 }

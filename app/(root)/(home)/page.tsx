@@ -1,5 +1,65 @@
+"use client";
+
+import TextSplit from "@/components/shared/animations/TextSplit";
+import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnimation";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 import "remixicon/fonts/remixicon.css";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Home() {
+  useGSAP(() => {
+    gsap.from(".position-title span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 1,
+      },
+      scrollTrigger: {
+        trigger: ".line1",
+        start: "top 80%",
+        end: "top 50%",
+      },
+    });
+
+    gsap.from(".specialising span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 1,
+      },
+      scrollTrigger: {
+        trigger: ".specialising",
+        start: "top 80%",
+        end: "top 50%",
+      },
+    });
+    gsap.from(".work-section span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".work-section",
+        start: "top 60%",
+        end: "top 50%",
+        // markers: true,
+      },
+    });
+    gsap.from(".contact-title span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".contact-title",
+        start: "top 70%",
+        end: "top 50%",
+        // markers: true,
+      },
+    });
+  }, []);
+
   return (
     <div className="main bg mm text-black">
       <section className="page1 w-full text-center pt-[16vw] py-[12vw]">
@@ -34,32 +94,67 @@ export default function Home() {
         </div>
         <div className="text px-4 flex flex-col justify-between">
           <div>
-            <h2 className="text-[5vw] bb leading-[1] tracking-tighter">
-              <span className="line block">senior digital</span>
-              <span className="line block">designer helping</span>
-              <span className="line block">brands communicate</span>
-              <span className="line block">with their audience in</span>
-              <span className="line block">a meaningful way</span>
+            <h2 className="position-title text-[5vw] bb leading-[1] tracking-tighter">
+              <span className="line line1 block overflow-hidden">
+                <TextSplit text="senior digital"></TextSplit>
+              </span>
+
+              <span className="line block line2 overflow-hidden">
+                <TextSplit text="designer helping"></TextSplit>
+              </span>
+
+              <span className="line block line3 overflow-hidden">
+                <TextSplit text="brands communicate"></TextSplit>
+              </span>
+
+              <span className="line block line4 overflow-hidden">
+                <TextSplit text="with their audience in"></TextSplit>
+              </span>
+
+              <span className="line line5 block overflow-hidden">
+                <TextSplit text="a meaningful way"></TextSplit>
+              </span>
             </h2>
           </div>
-          <div className="about-me bb">
-            <span className="text-5xl bg-white p-2">about me</span>
+          <div className="w-fit overflow-hidden bg-white">
+            <TextStaggerAnimation
+              href="/about"
+              text="about me"
+              className="about-me"
+            />
           </div>
+
           <div className="specialising bb">
-            <span className="text-5xl block">specialising in:</span>
-            <span className="text-5xl block">digital design</span>
-            <span className="text-5xl block">branding</span>
-            <span className="text-5xl block">web experiences</span>
-            <span className="text-5xl block">webflow development</span>
-            <span className="text-5xl block">art direction</span>
+            <span className="text-5xl block overflow-hidden">
+              <TextSplit text="specialising in:"></TextSplit>
+            </span>
+            <span className="text-5xl block overflow-hidden">
+              <TextSplit text="digital design"></TextSplit>
+            </span>
+            <span className="text-5xl block overflow-hidden">
+              <TextSplit text="branding"></TextSplit>
+            </span>
+            <span className="text-5xl block overflow-hidden">
+              <TextSplit text="web experiences"></TextSplit>
+            </span>
+            <span className="text-5xl block overflow-hidden">
+              <TextSplit text="webflow development"></TextSplit>
+            </span>
+            <span className="text-5xl block overflow-hidden">
+              <TextSplit text="art direction"></TextSplit>
+            </span>
           </div>
         </div>
       </section>
       <section className="page4 w-full px-4 pt-[14vw]">
         <div className="title text-center">
-          <h2 className="text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
-            <span className="line block">selected</span>
-            <span className="line block">works</span>
+          <h2 className="work-section text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
+            <span className="line block overflow-hidden">
+              <TextSplit text="selected"></TextSplit>
+            </span>
+            <span className="line block overflow-hidden">
+              <TextSplit text="works"></TextSplit>
+            </span>
           </h2>
         </div>
         <div className="para text-center text-4xl bb flex justify-center pt-[6vw]">
@@ -70,7 +165,11 @@ export default function Home() {
           </p>
         </div>
         <div className="projects bb flex justify-center pt-[6vw]">
-          <span className="text-5xl bg-white p-2">view all projects</span>
+          <TextStaggerAnimation
+            href="/projects"
+            text="view all projects"
+            className="projects"
+          />
         </div>
       </section>
       <section className="page5 w-full relative pt-[14vw]">
@@ -101,8 +200,10 @@ export default function Home() {
       </section>
       <section className="page6 w-full px-4 pt-[14vw]">
         <div className="title text-center">
-          <h2 className="text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
-            contact
+          <h2 className="contact-title text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
+            <span className="line block overflow-hidden">
+              <TextSplit text="contact"></TextSplit>
+            </span>
           </h2>
         </div>
         <div className="para text-center text-4xl bb flex justify-center pt-[6vw]">
@@ -113,19 +214,27 @@ export default function Home() {
           </p>
         </div>
         <div className="projects bb flex justify-center pt-[6vw]">
-          <span className="text-5xl bg-white p-2">contact me</span>
+          <TextStaggerAnimation
+            href="/contact"
+            text="contact"
+            className="contact"
+          />
         </div>
         <div className="projects bb flex justify-center pt-[2vw]">
-          <span className="text-5xl bg-white p-2">instagram</span>
+          <TextStaggerAnimation
+            href="https://www.instagram.com/anujkelodiya"
+            text="instagram"
+            className="instagram"
+          />
         </div>
         <div className="projects bb flex justify-center pt-[2vw]">
-          <span className="text-5xl bg-white p-2">linkedin</span>
+          <TextStaggerAnimation href="#" text="linkedin" className="linkedin" />
         </div>
         <div className="projects bb flex justify-center pt-[2vw]">
-          <span className="text-5xl bg-white p-2">bahance</span>
+          <TextStaggerAnimation href="#" text="behance" className="behance" />
         </div>
         <div className="projects bb flex justify-center pt-[2vw]">
-          <span className="text-5xl bg-white p-2">X</span>
+          <TextStaggerAnimation href="#" text="X" className="x" />
         </div>
       </section>
       <section className="footer pt-[8vw]">
@@ -136,7 +245,8 @@ export default function Home() {
         </div>
         <div className="text-center ll">
           <span>
-            developed by <span className="underline cursor-pointer">hardik</span>
+            developed by{" "}
+            <span className="underline cursor-pointer">hardik</span>
             <i className="ri-heart-fill"></i> | copyright © 2025
           </span>
         </div>
