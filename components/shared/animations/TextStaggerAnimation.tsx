@@ -2,6 +2,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import TextSplit from "./TextSplit";
 import gsap from "gsap";
+import { slideInOut } from "@/utils/slideInOut";
+import { useTransitionRouter } from "next-view-transitions";
 
 interface TextProps {
   href: string;
@@ -11,9 +13,16 @@ interface TextProps {
 
 const TextStaggerAnimation = ({ href, text, className }: TextProps) => {
   const [flag, setFlag] = useState(true);
+  const router = useTransitionRouter();
+
   return (
     <Link
       href={href}
+      onClick={() => {
+        router.push(`${href}`, {
+          onTransitionReady: slideInOut,
+        });
+      }}
       onMouseEnter={() => {
         if (flag) {
           setFlag(false);

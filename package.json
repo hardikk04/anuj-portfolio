@@ -13,9 +13,11 @@
     "@studio-freight/lenis": "^1.0.42",
     "gsap": "^3.12.7",
     "next": "15.2.3",
+    "next-view-transitions": "^0.3.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "remixicon": "^4.6.0"
+    "remixicon": "^4.6.0",
+    "split-type": "^0.3.4"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

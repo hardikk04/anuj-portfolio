@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { ViewTransitions } from "next-view-transitions";
 
 export const metadata: Metadata = {
   title: "Anuj Kelodiya",
@@ -12,8 +13,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`antialiased`}>{children}</body>
-    </html>
+    <ViewTransitions>
+      <html lang="en">
+        <head>
+          <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+          />
+        </head>
+        <body className={`antialiased`}>{children}</body>
+      </html>
+    </ViewTransitions>
   );
 }

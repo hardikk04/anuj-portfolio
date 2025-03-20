@@ -2,11 +2,11 @@
 
 import TextSplit from "@/components/shared/animations/TextSplit";
 import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnimation";
+import PortraitWorks from "@/components/work/PortraitWorks";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import "remixicon/fonts/remixicon.css";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
@@ -62,11 +62,11 @@ export default function Home() {
 
   return (
     <div className="main bg mm text-black">
-      <section className="page1 w-full text-center pt-[16vw] py-[12vw]">
-        <div className="mb-[-2.5vw] ml-16">
+      <section className="page1 w-full  pt-[16vw] py-[12vw] px-4">
+        <div className="mb-[-2.5vw] ml-[12vw]">
           <span className="text-2xl">portfolio</span>
         </div>
-        <div className="headline">
+        <div className="headline text-left">
           <h1 className="text-[14vw] tracking-wide scale-y-120 mm font-extrabold leading-none">
             Anuj Kelodiya
           </h1>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="page4 w-full px-4 pt-[14vw]">
+      <section className="page4 w-full px-4 pt-[10vw]">
         <div className="title text-center">
           <h2 className="work-section text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
             <span className="line block overflow-hidden">
@@ -166,90 +166,25 @@ export default function Home() {
         </div>
         <div className="projects bb flex justify-center pt-[6vw]">
           <TextStaggerAnimation
-            href="/projects"
+            href="/work"
             text="view all projects"
             className="projects"
           />
         </div>
       </section>
-      <section className="page5 w-full relative pt-[14vw]">
-        <div className="video1 h-screen w-full sticky top-0 left-0">
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1742268351423-6d04402e9090?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="project image"
-          ></img>
-          <div className="overlay absolute top-0 left-0 w-full h-screen bg-black/60 z-[1]"></div>
-        </div>
-        <div className="video2 h-screen w-full sticky top-0 left-0">
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1741781650657-ce002002a996?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="project image"
-          ></img>
-          <div className="overlay absolute top-0 left-0 w-full h-screen bg-black/60 z-[1]"></div>
-        </div>
-        <div className="video3 h-screen w-full sticky top-0 left-0">
-          <img
-            className="w-full h-full object-cover"
-            src="https://images.unsplash.com/photo-1696216997841-648877790ad4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="project image"
-          ></img>
-          <div className="overlay absolute top-0 left-0 w-full h-screen bg-black/60 z-[1]"></div>
-        </div>
-      </section>
-      <section className="page6 w-full px-4 pt-[14vw]">
-        <div className="title text-center">
-          <h2 className="contact-title text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
-            <span className="line block overflow-hidden">
-              <TextSplit text="contact"></TextSplit>
-            </span>
-          </h2>
-        </div>
-        <div className="para text-center text-4xl bb flex justify-center pt-[6vw]">
-          <p className="w-[70%]">
-            interested in starting a project? Or potentially collaborating on
-            something exciting? Or just interested in following along for
-            inspiration and talking design, music and Futurama?
-          </p>
-        </div>
-        <div className="projects bb flex justify-center pt-[6vw]">
-          <TextStaggerAnimation
-            href="/contact"
-            text="contact"
-            className="contact"
-          />
-        </div>
-        <div className="projects bb flex justify-center pt-[2vw]">
-          <TextStaggerAnimation
-            href="https://www.instagram.com/anujkelodiya"
-            text="instagram"
-            className="instagram"
-          />
-        </div>
-        <div className="projects bb flex justify-center pt-[2vw]">
-          <TextStaggerAnimation href="#" text="linkedin" className="linkedin" />
-        </div>
-        <div className="projects bb flex justify-center pt-[2vw]">
-          <TextStaggerAnimation href="#" text="behance" className="behance" />
-        </div>
-        <div className="projects bb flex justify-center pt-[2vw]">
-          <TextStaggerAnimation href="#" text="X" className="x" />
-        </div>
-      </section>
-      <section className="footer pt-[8vw]">
-        <div className="footer-text text-center ">
-          <h2 className="text-[14vw] tracking-wide mm font-extrabold leading-none">
-            Anuj Kelodiya
-          </h2>
-        </div>
-        <div className="text-center ll">
-          <span>
-            developed by{" "}
-            <span className="underline cursor-pointer">hardik</span>
-            <i className="ri-heart-fill"></i> | copyright © 2025
-          </span>
-        </div>
+      <section className="page5 w-full relative pt-[10vw]">
+        <PortraitWorks
+          alt="project video"
+          link="https://images.unsplash.com/photo-1742268351423-6d04402e9090?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <PortraitWorks
+          alt="project video"
+          link="https://images.unsplash.com/photo-1741781650657-ce002002a996?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
+        <PortraitWorks
+          alt="project video"
+          link="https://images.unsplash.com/photo-1696216997841-648877790ad4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        />
       </section>
     </div>
   );
