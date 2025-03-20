@@ -6,11 +6,15 @@ import Footer from "@/components/shared/footer/Footer";
 import Contact from "@/components/contact/Contact";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import gsap from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
   useLenis();
-  
+
   useEffect(() => {
     window.scrollTo({ top: 0 });
   }, [pathname]);

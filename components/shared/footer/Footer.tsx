@@ -8,7 +8,7 @@ const Footer = () => {
       </div>
       <div className="text-center ll">
         <span>
-          developed by <span className="underline cursor-pointer">hardik</span>
+          design & developed by <span className="underline cursor-pointer">hardik</span>
           <i className="ri-heart-fill"></i> | copyright © 2025
         </span>
       </div>

@@ -11,7 +11,7 @@ export const slideInOut = () => {
         transform: "translateY(0)",
       },
       {
-        opacity: 0.4,
+        opacity: 0.2,
         transform: "translateY(-35%)",
       },
     ],

@@ -6,12 +6,16 @@ import { useTransitionRouter } from "next-view-transitions";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [flag, setFlag] = useState(false);
   const pathname = usePathname();
   const router = useTransitionRouter();
+
+  useEffect(() => {
+    setFlag(flag ? false : flag);
+  }, [pathname]);
 
   return (
     <nav className="w-full fixed top-5 z-10 flex justify-center">
@@ -21,9 +25,11 @@ const Navbar = () => {
             <div className="nav-logo">
               <Link
                 onClick={() => {
-                  router.push("/", {
-                    onTransitionReady: slideInOut,
-                  });
+                  if (pathname !== "/") {
+                    router.push("/", {
+                      onTransitionReady: slideInOut,
+                    });
+                  }
                 }}
                 href="/"
               >
@@ -84,9 +90,11 @@ const Navbar = () => {
           <div className="flex justify-between gap-4 mt-4 overflow-hidden">
             <Link
               onClick={() => {
-                router.push("/", {
-                  onTransitionReady: slideInOut,
-                });
+                if (pathname !== "/") {
+                  router.push("/", {
+                    onTransitionReady: slideInOut,
+                  });
+                }
               }}
               href="/"
               className="w-[20%]"
@@ -102,9 +110,11 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={() => {
-                router.push("/about", {
-                  onTransitionReady: slideInOut,
-                });
+                if (pathname !== "/about") {
+                  router.push("/about", {
+                    onTransitionReady: slideInOut,
+                  });
+                }
               }}
               href="/about"
               className="w-[20%]"
@@ -123,16 +133,18 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={() => {
-                router.push("/work", {
-                  onTransitionReady: slideInOut,
-                });
+                if (pathname !== "/work") {
+                  router.push("/work", {
+                    onTransitionReady: slideInOut,
+                  });
+                }
               }}
               href="/work"
               className="w-[20%]"
             >
               <div
                 className={`${
-                  pathname === "/project"
+                  pathname === "/work"
                     ? "bg-black rounded-[.5vw] text-white"
                     : ""
                 } nav-link overflow-hidden hover:text-white hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
@@ -143,9 +155,11 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={() => {
-                router.push("/services", {
-                  onTransitionReady: slideInOut,
-                });
+                if (pathname !== "/services") {
+                  router.push("/services", {
+                    onTransitionReady: slideInOut,
+                  });
+                }
               }}
               href="/services"
               className="w-[20%]"
@@ -163,9 +177,11 @@ const Navbar = () => {
             </Link>
             <Link
               onClick={() => {
-                router.push("/contact", {
-                  onTransitionReady: slideInOut,
-                });
+                if (pathname !== "/contact") {
+                  router.push("/contact", {
+                    onTransitionReady: slideInOut,
+                  });
+                }
               }}
               href="/contact"
               className="w-[20%]"
