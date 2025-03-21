@@ -1,4 +1,3 @@
-import React from "react";
 
 const Contact = () => {
   return (
@@ -19,7 +18,6 @@ const Contact = () => {
           src="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"
         ></video>
       </section>
-      
     </div>
   );
 };

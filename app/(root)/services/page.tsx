@@ -3,6 +3,12 @@
 import HorizontalCard from "@/components/services/HorizontalCard";
 import ProcessCard from "@/components/services/ProcessCard";
 import TextSplit from "@/components/shared/animations/TextSplit";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
@@ -181,6 +187,86 @@ const Services = () => {
               title="Scale"
               para="Establishing a data-driven foundation through in-depth user research and competitive analysis."
             />
+          </div>
+        </div>
+      </section>
+      <section className="relative w-full items-center p-4">
+        <div className="title text-center">
+          <h2 className="work-section text-[10vw] bb tracking-tighter font-extrabold">
+            <span className="line block overflow-hidden">
+              <TextSplit text="FAQ"></TextSplit>
+            </span>
+          </h2>
+        </div>
+        <div className="w-full flex justify-end">
+          <div className="w-[85%]">
+            <Accordion type="single" collapsible className="w-full flex flex-col gap-8">
+              <AccordionItem value="item-1">
+                <AccordionTrigger className="text-5xl tracking-tight bb font-light">
+                  What makes your process unique?
+                </AccordionTrigger>
+                <AccordionContent className="ll text-xl w-[90%]">
+                  Our process is built on research, strategy, and adaptability.
+                  As part of the Synthesis Consulting Group, a network of four
+                  specialized agencies, we bring diverse expertise and deep
+                  experience to every project. Whether working independently or
+                  collaboratively, we deliver solutions that align with your
+                  goals and create lasting impact.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-2">
+                <AccordionTrigger className="text-5xl tracking-tight bb font-light">
+                  Can you audit our current digital solution and suggest
+                  improvements?
+                </AccordionTrigger>
+                <AccordionContent className="ll text-xl w-[90%]">
+                  Yes, we can! Our team is capable of conducting a variety of
+                  audits to evaluate your digital solution comprehensively. From
+                  assessing usability and design to technical performance and
+                  scalability, we focus on uncovering opportunities for
+                  improvement.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-3">
+                <AccordionTrigger className="text-5xl tracking-tight bb font-light">
+                  Do you set measurable goals at the start of a project?
+                </AccordionTrigger>
+                <AccordionContent className="ll text-xl w-[90%]">
+                  Absolutely. We believe that success starts with clear
+                  objectives. Together, we define measurable goals at the
+                  beginning of each project, ensuring our solutions align with
+                  your vision and deliver tangible results.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-4">
+                <AccordionTrigger className="text-5xl tracking-tight bb font-light">
+                  Can you maintain our existing website?
+                </AccordionTrigger>
+                <AccordionContent className="ll text-xl w-[90%]">
+                  Yes, we offer comprehensive maintenance services to keep your
+                  website running smoothly. We specialize in managing the
+                  technical side for platforms built on WordPress, Webflow, or
+                  Laravel. For UX/UI, we can work with any platform, ensuring
+                  your digital product continues to deliver an exceptional user
+                  experience. From technical updates and bug fixes to ongoing
+                  optimization, we ensure your platform stays secure, efficient,
+                  and aligned with user needs.
+                </AccordionContent>
+              </AccordionItem>
+              <AccordionItem value="item-5">
+                <AccordionTrigger className="text-5xl tracking-tight bb font-light">
+                  What platforms or technologies do you use?
+                </AccordionTrigger>
+                <AccordionContent className="ll text-xl w-[90%]">
+                  From a design standpoint, we primarily work with Figma,
+                  ensuring precision and collaboration throughout the design
+                  process. On the development side, we specialize in platforms
+                  like WordPress, Webflow, and Laravel. Additionally, we can
+                  design projects that are built on other platforms by external
+                  development teams, providing flexibility to meet your needs.
+                </AccordionContent>
+              </AccordionItem>
+            </Accordion>
           </div>
         </div>
       </section>

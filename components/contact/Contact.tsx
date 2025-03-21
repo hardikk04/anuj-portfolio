@@ -1,5 +1,6 @@
-import TextStaggerAnimation from "../shared/animations/TextStaggerAnimation";
+
 import TextSplit from "../shared/animations/TextSplit";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
@@ -18,28 +19,8 @@ const Contact = () => {
           inspiration and talking design, music and Futurama?
         </p>
       </div>
-      <div className="projects bb flex justify-center pt-[6vw]">
-        <TextStaggerAnimation
-          href="/contact"
-          text="contact"
-          className="contact"
-        />
-      </div>
-      <div className="projects bb flex justify-center pt-[2vw]">
-        <TextStaggerAnimation
-          href="https://www.instagram.com/anujkelodiya"
-          text="instagram"
-          className="instagram"
-        />
-      </div>
-      <div className="projects bb flex justify-center pt-[2vw]">
-        <TextStaggerAnimation href="#" text="linkedin" className="linkedin" />
-      </div>
-      <div className="projects bb flex justify-center pt-[2vw]">
-        <TextStaggerAnimation href="#" text="behance" className="behance" />
-      </div>
-      <div className="projects bb flex justify-center pt-[2vw]">
-        <TextStaggerAnimation href="#" text="X" className="x" />
+      <div className="pt-[4vw] flex justify-center">
+        <ContactForm></ContactForm>
       </div>
     </section>
   );

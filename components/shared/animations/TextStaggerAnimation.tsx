@@ -17,6 +17,7 @@ const TextStaggerAnimation = ({ href, text, className }: TextProps) => {
 
   return (
     <Link
+      scroll={false}
       href={href}
       onClick={() => {
         router.push(`${href}`, {

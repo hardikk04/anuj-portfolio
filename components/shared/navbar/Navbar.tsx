@@ -10,20 +10,40 @@ import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [flag, setFlag] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
+  let lastScrollY = 0;
   const pathname = usePathname();
   const router = useTransitionRouter();
 
   useEffect(() => {
     setFlag(flag ? false : flag);
+
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        const currentScrollY = window.scrollY;
+        setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
+        lastScrollY = currentScrollY;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [pathname]);
 
   return (
-    <nav className="w-full fixed top-5 z-10 flex justify-center">
+    <nav
+      className={`w-full fixed top-5 z-10 flex justify-center ${
+        isVisible
+          ? "translate-y-0 transition-all duration-500 ease-in-out"
+          : "-translate-y-[150%] transition-all duration-500 ease-in-out"
+      }`}
+    >
       <div className="w-[98%] bg-white px-4 py-3 rounded-xl ">
         <div className="w-full flex justify-between items-center">
           <div className="nav-left flex gap-2 items-center mm">
             <div className="nav-logo">
               <Link
+                scroll={false}
                 onClick={() => {
                   if (pathname !== "/") {
                     router.push("/", {
@@ -89,6 +109,7 @@ const Navbar = () => {
         <div className="links overflow-hidden opacity-0 h-0">
           <div className="flex justify-between gap-4 mt-4 overflow-hidden">
             <Link
+              scroll={false}
               onClick={() => {
                 if (pathname !== "/") {
                   router.push("/", {
@@ -109,6 +130,7 @@ const Navbar = () => {
               </div>
             </Link>
             <Link
+              scroll={false}
               onClick={() => {
                 if (pathname !== "/about") {
                   router.push("/about", {
@@ -132,6 +154,7 @@ const Navbar = () => {
               </div>
             </Link>
             <Link
+              scroll={false}
               onClick={() => {
                 if (pathname !== "/work") {
                   router.push("/work", {
@@ -154,6 +177,7 @@ const Navbar = () => {
               </div>
             </Link>
             <Link
+              scroll={false}
               onClick={() => {
                 if (pathname !== "/services") {
                   router.push("/services", {
@@ -176,6 +200,7 @@ const Navbar = () => {
               </div>
             </Link>
             <Link
+              scroll={false}
               onClick={() => {
                 if (pathname !== "/contact") {
                   router.push("/contact", {
