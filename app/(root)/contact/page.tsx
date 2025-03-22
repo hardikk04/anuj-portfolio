@@ -1,11 +1,30 @@
+"use client";
+import TextSplit from "@/components/shared/animations/TextSplit";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
-const Contact = () => {
+export default function Contact() {
+  useGSAP(() => {
+    gsap.from(".contact-title span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".contact-title",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
+  }, []);
   return (
     <div className="main bg mm text-black">
       <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
-        <div className="headline text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none">
-            contact
+        <div className="contact-heading text-left">
+          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb leading-none overflow-hidden">
+            <TextSplit text="contact"></TextSplit>
           </h1>
         </div>
       </section>
@@ -20,6 +39,4 @@ const Contact = () => {
       </section>
     </div>
   );
-};
-
-export default Contact;
+}

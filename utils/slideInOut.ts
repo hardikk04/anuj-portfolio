@@ -1,9 +1,19 @@
 import gsap from "gsap";
 
-export const slideInOut = () => {
+export const slideInOut = (text: string) => {
   gsap.to(".links", {
     height: "0",
   });
+
+  if (text) {
+    gsap.from(`.${text.replace(/^\//, "")}-heading span`, {
+      transform: "translateY(100%)",
+      delay: 1.2,
+      stagger: {
+        amount: 0.5,
+      },
+    });
+  }
   document.documentElement.animate(
     [
       {

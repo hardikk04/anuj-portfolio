@@ -3,11 +3,13 @@ import { getIndianTime } from "@/lib/getIndiaTime";
 
 const SocialMedia = () => {
   return (
-    <div className="flex justify-center pt-[6vw] bg">
+    <div className="flex justify-center pt-[6vw] bg pb-[3vw] rounded-b-2xl">
       <div className="w-[75%] flex justify-between">
         <div className="flex flex-col justify-between">
           <div className="text-center">
-            <span className="block text-2xl bb">hello@lewiszhang.dev</span>
+            <span className="block text-2xl bb">
+              anujkelodiya.work@gmail.com
+            </span>
             <span className="block text-2xl opacity-70 ll mt-2">
               +91 7974374113
             </span>
@@ -24,6 +26,7 @@ const SocialMedia = () => {
             <TextStaggerAnimation
               href="/contact"
               text="contact"
+              isNew={false}
               className="contact"
             />
           </div>
@@ -31,21 +34,25 @@ const SocialMedia = () => {
             <TextStaggerAnimation
               href="https://www.instagram.com/anujkelodiya"
               text="instagram"
+              isNew={true}
               className="instagram"
             />
           </div>
           <div className="projects bb flex justify-center">
             <TextStaggerAnimation
-              href="#"
+              href="https://www.instagram.com/anujkelodiya"
               text="linkedin"
+              isNew={true}
               className="linkedin"
             />
           </div>
           <div className="projects bb flex justify-center">
-            <TextStaggerAnimation href="#" text="behance" className="behance" />
-          </div>
-          <div className="projects bb flex justify-center">
-            <TextStaggerAnimation href="#" text="X" className="x" />
+            <TextStaggerAnimation
+              href="https://x.com/AnujKelodiya?t=sMs3xKik6FlByvAHkE8CHQ&s=09"
+              text="X"
+              isNew={true}
+              className="x"
+            />
           </div>
         </div>
         <div className="flex flex-col justify-between">

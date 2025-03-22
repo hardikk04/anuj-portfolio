@@ -47,7 +47,7 @@ const Navbar = () => {
                 onClick={() => {
                   if (pathname !== "/") {
                     router.push("/", {
-                      onTransitionReady: slideInOut,
+                      onTransitionReady: () => slideInOut("home"),
                     });
                   }
                 }}
@@ -113,7 +113,7 @@ const Navbar = () => {
               onClick={() => {
                 if (pathname !== "/") {
                   router.push("/", {
-                    onTransitionReady: slideInOut,
+                    onTransitionReady: () => slideInOut("home"),
                   });
                 }
               }}
@@ -134,7 +134,7 @@ const Navbar = () => {
               onClick={() => {
                 if (pathname !== "/about") {
                   router.push("/about", {
-                    onTransitionReady: slideInOut,
+                    onTransitionReady: () => slideInOut("about"),
                   });
                 }
               }}
@@ -158,7 +158,7 @@ const Navbar = () => {
               onClick={() => {
                 if (pathname !== "/work") {
                   router.push("/work", {
-                    onTransitionReady: slideInOut,
+                    onTransitionReady: () => slideInOut("work"),
                   });
                 }
               }}
@@ -181,7 +181,7 @@ const Navbar = () => {
               onClick={() => {
                 if (pathname !== "/services") {
                   router.push("/services", {
-                    onTransitionReady: slideInOut,
+                    onTransitionReady: () => slideInOut("services"),
                   });
                 }
               }}
@@ -204,7 +204,7 @@ const Navbar = () => {
               onClick={() => {
                 if (pathname !== "/contact") {
                   router.push("/contact", {
-                    onTransitionReady: slideInOut,
+                    onTransitionReady: () => slideInOut("contact"),
                   });
                 }
               }}

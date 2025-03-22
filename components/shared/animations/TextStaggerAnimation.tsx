@@ -4,25 +4,31 @@ import TextSplit from "./TextSplit";
 import gsap from "gsap";
 import { slideInOut } from "@/utils/slideInOut";
 import { useTransitionRouter } from "next-view-transitions";
+import { usePathname } from "next/navigation";
 
 interface TextProps {
   href: string;
   text: string;
   className: string;
+  isNew?: boolean;
 }
 
-const TextStaggerAnimation = ({ href, text, className }: TextProps) => {
+const TextStaggerAnimation = ({ href, text, className, isNew }: TextProps) => {
   const [flag, setFlag] = useState(true);
+  const pathname = usePathname();
   const router = useTransitionRouter();
 
   return (
     <Link
       scroll={false}
       href={href}
+      target={isNew ? "_blank" : ""}
       onClick={() => {
-        router.push(`${href}`, {
-          onTransitionReady: slideInOut,
-        });
+        if (pathname !== href) {
+          router.push(`${href}`, {
+            onTransitionReady: () => slideInOut(href),
+          });
+        }
       }}
       onMouseEnter={() => {
         if (flag) {

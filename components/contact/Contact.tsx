@@ -12,7 +12,7 @@ const Contact = () => {
           </span>
         </h2>
       </div>
-      <div className="para text-center text-4xl bb flex justify-center pt-[6vw]">
+      <div className="contact-para text-center text-4xl bb flex justify-center pt-[6vw]">
         <p className="w-[70%]">
           interested in starting a project? Or potentially collaborating on
           something exciting? Or just interested in following along for

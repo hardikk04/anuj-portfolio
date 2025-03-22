@@ -13,7 +13,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import React from "react";
 
-const Services = () => {
+export default function Services() {
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -40,13 +40,55 @@ const Services = () => {
       },
       "same"
     );
+
+    gsap.from(".our-process span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".our-process",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
+
+    gsap.from(".faq span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".faq",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
+
+    gsap.from(".contact-title span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".contact-title",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
   }, []);
   return (
     <div className="main bg mm text-black">
       <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
-        <div className="headline text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none">
-            services
+        <div className="services-heading text-left">
+          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none overflow-hidden">
+            <TextSplit text="services"></TextSplit>
           </h1>
         </div>
       </section>
@@ -151,7 +193,7 @@ const Services = () => {
       </section>
       <section className="page6 h-screen w-full relative p-4 pt-[2vw]">
         <div className="title text-center pb-[4vw]">
-          <h2 className="work-section text-[10vw] bb tracking-tighter font-extrabold">
+          <h2 className="our-process text-[10vw] bb tracking-tighter font-extrabold">
             <span className="line block overflow-hidden">
               <TextSplit text="our process"></TextSplit>
             </span>
@@ -192,7 +234,7 @@ const Services = () => {
       </section>
       <section className="relative w-full items-center p-4">
         <div className="title text-center">
-          <h2 className="work-section text-[10vw] bb tracking-tighter font-extrabold">
+          <h2 className="faq text-[10vw] bb tracking-tighter font-extrabold">
             <span className="line block overflow-hidden">
               <TextSplit text="FAQ"></TextSplit>
             </span>
@@ -200,7 +242,11 @@ const Services = () => {
         </div>
         <div className="w-full flex justify-end">
           <div className="w-[85%]">
-            <Accordion type="single" collapsible className="w-full flex flex-col gap-8">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full flex flex-col gap-8"
+            >
               <AccordionItem value="item-1">
                 <AccordionTrigger className="text-5xl tracking-tight bb font-light">
                   What makes your process unique?
@@ -272,6 +318,4 @@ const Services = () => {
       </section>
     </div>
   );
-};
-
-export default Services;
+}

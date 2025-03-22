@@ -5,9 +5,6 @@ import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnim
 import PortraitWorks from "@/components/work/PortraitWorks";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
   useGSAP(() => {
@@ -20,6 +17,7 @@ export default function Home() {
         trigger: ".line1",
         start: "top 80%",
         end: "top 50%",
+        scrub: 1,
       },
     });
 
@@ -32,6 +30,7 @@ export default function Home() {
         trigger: ".specialising",
         start: "top 80%",
         end: "top 50%",
+        scrub: 1,
       },
     });
     gsap.from(".work-section span", {
@@ -41,8 +40,10 @@ export default function Home() {
       },
       scrollTrigger: {
         trigger: ".work-section",
-        start: "top 60%",
-        end: "top 50%",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+
         // markers: true,
       },
     });
@@ -53,8 +54,9 @@ export default function Home() {
       },
       scrollTrigger: {
         trigger: ".contact-title",
-        start: "top 70%",
-        end: "top 50%",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
         // markers: true,
       },
     });

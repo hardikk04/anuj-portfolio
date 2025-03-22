@@ -73,13 +73,27 @@ export default function About() {
         // markers: true,
       },
     });
+    gsap.from(".contact-title span", {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.5,
+      },
+      scrollTrigger: {
+        trigger: ".contact-title",
+        start: "top 80%",
+        end: "top 40%",
+        scrub: 1,
+        // markers: true,
+      },
+    });
   }, []);
+
   return (
     <div className="main bg mm text-black">
       <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
-        <div className="headline text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none">
-            about
+        <div className="about-heading text-left">
+          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none overflow-hidden">
+            <TextSplit text="about"></TextSplit>
           </h1>
         </div>
       </section>
