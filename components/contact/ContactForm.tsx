@@ -35,7 +35,7 @@ const ContactForm = () => {
 
     try {
       const formData = new FormData();
-      formData.append("access_key", "18ebc122-5b07-4c9e-8280-8efe9dad35ae");
+      formData.append("access_key", `${process.env.NEXT_PUBLIC_ACCESS_KEY}`);
       formData.append("name", values.title);
       formData.append("email", values.email);
       formData.append("message", values.message);
