@@ -147,7 +147,7 @@ export default function About() {
           </span>
         </div>
       </section>
-      <section className="page4 text-white  relative">
+      <section className="page4 custom-gradient text-white  relative">
         <span className="mm sticky inline-block pl-4 top-1/2 -translate-y-1/2">
           Experience
         </span>

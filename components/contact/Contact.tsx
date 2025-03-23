@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
-    <section className="contact-section bg w-full px-4 pt-[10vw]">
+    <section className="contact-section bg w-full px-4 pt-[10vw] pb-[4vw]">
       <div className="title text-center">
         <h2 className="contact-title text-[10vw] leading-[.8] bb tracking-tighter font-extrabold">
           <span className="line block overflow-hidden">
