@@ -5,6 +5,7 @@ import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnim
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -224,11 +225,13 @@ export default function About() {
           </span>
         </div>
       </section>
-      <section className="page6 relative p-4 h-screen w-full">
-        <img
+      <section className="page6 relative p-4 h-screen w-full bg">
+        <Image
           className="w-full h-full object-cover"
           src="https://cdn.prod.website-files.com/666066030b1447405865fff8/674ef6cc80b693672fdac03c_Filip-Felbar-Domestika-Course.webp"
           alt=""
+          width={1000}
+          height={1000}
         />
       </section>
     </div>

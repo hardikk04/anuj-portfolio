@@ -56,7 +56,7 @@ const Footer = () => {
           <div className="flex flex-col gap-5">
             <div>
               <h3 className="bb text-white/65">Remote from India</h3>
-              <span className="ll block">23° 1' 38.39" N / 77° 1' 5.89" E</span>
+              <span className="ll block">{`23° 1' 38.39" N / 77° 1' 5.89" E`}</span>
             </div>
             <div>
               <h3 className="bb text-white/65">Local Time</h3>

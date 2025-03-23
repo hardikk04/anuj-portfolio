@@ -6,23 +6,25 @@ import { useTransitionRouter } from "next-view-transitions";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
   const [flag, setFlag] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
-  let lastScrollY = 0;
+  const lastScrollY = useRef(0);
   const pathname = usePathname();
   const router = useTransitionRouter();
 
   useEffect(() => {
-    setFlag(flag ? false : flag);
+    setFlag((prevFlag) => (prevFlag ? false : false));
 
     const handleScroll = () => {
       if (typeof window !== "undefined") {
         const currentScrollY = window.scrollY;
-        setIsVisible(lastScrollY > currentScrollY || currentScrollY < 10);
-        lastScrollY = currentScrollY;
+        setIsVisible(
+          lastScrollY.current > currentScrollY || currentScrollY < 10
+        );
+        lastScrollY.current = currentScrollY;
       }
     };
 

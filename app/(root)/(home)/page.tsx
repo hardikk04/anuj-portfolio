@@ -5,6 +5,7 @@ import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnim
 import PortraitWorks from "@/components/work/PortraitWorks";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Image from "next/image";
 
 export default function Home() {
   useGSAP(() => {
@@ -87,11 +88,13 @@ export default function Home() {
         ></video>
       </section>
       <section className="page3 w-full px-4 flex pt-[14vw]">
-        <div className="role-model w-[32%] h-[150vh] bg-red-200">
-          <img
+        <div className="role-model w-[32%] h-[150vh] overflow-hidden">
+          <Image
             className="h-full w-full object-cover"
             src="https://cdn.prod.website-files.com/666066030b1447405865fff8/674ef4bbe8fcbec7ae18ca8b_Filip%20Felbar%20-%20Intro%20Image-p-1600.webp"
             alt=""
+            height={1000}
+            width={1000}
           />
         </div>
         <div className="text px-4 flex flex-col justify-between">
