@@ -119,7 +119,7 @@ export default function About() {
           </h2>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <span className="text-lg bb">I’m Anuj and I've been</span>
+          <span className="text-lg bb">{`I’m Anuj and I've been`}</span>
         </div>
 
         <div className="creating h-screen w-full text-center px-4">
@@ -140,11 +140,11 @@ export default function About() {
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-5xl bb text-center w-[75%]">
-            With eight years of experience in digital design, I've crafted
+            {`With eight years of experience in digital design, I've crafted
             extraordinary experiences that stand out. My journey has taken me
             through in-house roles, agency projects, and freelance ventures,
             working with industries such as luxury, audio, fintech, healthtech,
-            marketing, architecture, interior design, and video production.
+            marketing, architecture, interior design, and video production.`}
           </span>
         </div>
       </section>
@@ -190,8 +190,8 @@ export default function About() {
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-lg bb">
-            since you've been scrolling so long, interested in listen to my
-            music?
+            {`since you've been scrolling so long, interested in listen to my
+            music?`}
           </span>
         </div>
 
@@ -217,11 +217,11 @@ export default function About() {
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-5xl bb text-center w-[75%]">
-            With eight years of experience in digital design, I've crafted
+            {`With eight years of experience in digital design, I've crafted
             extraordinary experiences that stand out. My journey has taken me
             through in-house roles, agency projects, and freelance ventures,
             working with industries such as luxury, audio, fintech, healthtech,
-            marketing, architecture, interior design, and video production.
+            marketing, architecture, interior design, and video production.`}
           </span>
         </div>
       </section>
