@@ -25,9 +25,9 @@ export default function Work() {
   });
   return (
     <div className="main bg mm text-black">
-      <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
+      <section className="page1 w-full pt-[12vw] px-4 pb-[4vw]">
         <div className="work-heading text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none overflow-hidden">
+          <h1 className="text-[22vw] tracking-tighter textt  leading-none overflow-hidden">
             <TextSplit text="work"></TextSplit>
           </h1>
         </div>
@@ -47,7 +47,7 @@ export default function Work() {
         />
       </section>
       <section className="page3 relative px-4">
-        <h2 className="bb text-[10vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 ">
+        <h2 className="textt text-[10vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 ">
           reels
         </h2>
         <div className="reels w-full px-4 overflow-hidden ">

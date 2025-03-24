@@ -66,7 +66,7 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-            <span className="uppercase">
+            <span className="uppercase bb">
               CREATIVE nomad, designing digital products & brands.
             </span>
           </div>

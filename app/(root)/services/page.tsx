@@ -85,9 +85,9 @@ export default function Services() {
   }, []);
   return (
     <div className="main bg mm text-black">
-      <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
+      <section className="page1 w-full pt-[12vw]  px-4 pb-[4vw]">
         <div className="services-heading text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none overflow-hidden">
+          <h1 className="text-[22vw] tracking-tighter textt leading-none overflow-hidden">
             <TextSplit text="services"></TextSplit>
           </h1>
         </div>
@@ -102,7 +102,7 @@ export default function Services() {
         ></video>
       </section>
       <section className="page3 relative p-4">
-        <span className="bb sticky inline-block pl-4 top-20 left-0 text-[18vw] tracking-tighter leading-none">
+        <span className="textt sticky inline-block pl-4 top-20 left-0 text-[18vw] tracking-tighter leading-none">
           01
         </span>
         <div className="flex justify-end relative">
@@ -110,8 +110,8 @@ export default function Services() {
             <div className="line w-full h-[2px] bg-black"></div>
             <span className="bb inline-block py-4">THE MAIN PART</span>
             <div>
-              <h2 className="text-[6vw] bb tracking-tighter">Product Design</h2>
-              <p className="ll w-[80%] text-lg">
+              <h2 className="text-[6vw] textt tracking-tighter">Product Design</h2>
+              <p className="ll w-[80%] text-xl">
                 Most of my designs are not just about aesthetics, but about
                 developing logical, scalable design systems that are precisely
                 tailored to the web and app application. With a strong focus on
@@ -132,7 +132,7 @@ export default function Services() {
         </div>
       </section>
       <section className="page4 relative p-4">
-        <span className="bb sticky inline-block pl-4 top-20 left-0 text-[18vw] tracking-tighter leading-none">
+        <span className="textt sticky inline-block pl-4 top-20 left-0 text-[18vw] tracking-tighter leading-none">
           02
         </span>
         <div className="flex justify-end relative">
@@ -140,10 +140,10 @@ export default function Services() {
             <div className="line w-full h-[2px] bg-black"></div>
             <span className="bb inline-block py-4">The Technical part</span>
             <div>
-              <h2 className="text-[6vw] bb tracking-tighter">
+              <h2 className="text-[6vw] textt tracking-tighter">
                 Webflow Development
               </h2>
-              <p className="ll w-[80%] text-lg">
+              <p className="ll w-[80%] text-xl">
                 Translating design into dynamic, functional web experiences is
                 where I thrive. I’m passionate about transforming design systems
                 into responsive, web-based environments, leveraging Webflow’s
@@ -171,10 +171,10 @@ export default function Services() {
             <div className="line w-full h-[2px] bg-black"></div>
             <span className="bb inline-block py-4">The Visionary part</span>
             <div>
-              <h2 className="text-[6vw] bb tracking-tighter">
+              <h2 className="text-[6vw] textt tracking-tighter">
                 Branding & Vision
               </h2>
-              <p className="ll w-[80%] text-lg">
+              <p className="ll w-[80%] text-xl">
                 UI design isn’t just about buttons and components — It is about
                 reflecting the essence of a brand on digital functional
                 platforms and strengthening brand authenticity at every user
@@ -193,7 +193,7 @@ export default function Services() {
       </section>
       <section className="page6 h-screen w-full relative p-4 pt-[2vw]">
         <div className="title text-center pb-[4vw]">
-          <h2 className="our-process text-[10vw] bb tracking-tighter font-extrabold">
+          <h2 className="our-process text-[10vw] textt tracking-tighter font-extrabold">
             <span className="line block overflow-hidden">
               <TextSplit text="our process"></TextSplit>
             </span>
@@ -234,7 +234,7 @@ export default function Services() {
       </section>
       <section className="relative w-full items-center p-4">
         <div className="title text-center">
-          <h2 className="faq text-[10vw] bb tracking-tighter font-extrabold">
+          <h2 className="faq text-[10vw] textt tracking-tighter font-extrabold">
             <span className="line block overflow-hidden">
               <TextSplit text="FAQ"></TextSplit>
             </span>

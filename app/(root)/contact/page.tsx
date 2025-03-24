@@ -23,7 +23,7 @@ export default function Contact() {
     <div className="main bg mm text-black">
       <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
         <div className="contact-heading text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb leading-none overflow-hidden">
+          <h1 className="text-[22vw] tracking-tighter textt leading-none overflow-hidden">
             <TextSplit text="contact"></TextSplit>
           </h1>
         </div>

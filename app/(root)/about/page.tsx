@@ -90,10 +90,10 @@ export default function About() {
   }, []);
 
   return (
-    <div className="main bg mm text-black">
+    <div className="main bg bb text-black">
       <section className="page1 w-full  pt-[12vw]  px-4 pb-[4vw]">
         <div className="about-heading text-left">
-          <h1 className="text-[22vw] tracking-tighter scale-y-120 bb  leading-none overflow-hidden">
+          <h1 className="text-[22vw] tracking-tighter textt  leading-none overflow-hidden">
             <TextSplit text="about"></TextSplit>
           </h1>
         </div>
@@ -108,11 +108,11 @@ export default function About() {
         ></video>
       </section>
       <section className="page3 relative">
-        <span className="mm sticky inline-block pl-4 top-1/2 -translate-y-1/2">
+        <span className="bb sticky inline-block pl-4 top-1/2 -translate-y-1/2">
           Introduction
         </span>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <h2 className="namaste text-[22vw] tracking-tighter bb leading-none">
+          <h2 className="namaste text-[20vw] tracking-tighter textt leading-none">
             <span className="block overflow-hidden">
               <TextSplit text="namaste"></TextSplit>
             </span>
@@ -123,7 +123,7 @@ export default function About() {
         </div>
 
         <div className="creating h-screen w-full text-center px-4">
-          <h2 className=" text-[12vw] leading-[1] tracking-tighter bb">
+          <h2 className=" text-[12vw] leading-[1] tracking-tighter textt">
             <span className="block overflow-hidden">
               <TextSplit text="creating"></TextSplit>
             </span>
@@ -139,7 +139,7 @@ export default function About() {
           </h2>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <span className="text-5xl bb text-center w-[75%]">
+          <span className="text-5xl ll text-center w-[75%]">
             {`With eight years of experience in digital design, I've crafted
             extraordinary experiences that stand out. My journey has taken me
             through in-house roles, agency projects, and freelance ventures,
@@ -149,18 +149,18 @@ export default function About() {
         </div>
       </section>
       <section className="page4 custom-gradient text-white  relative">
-        <span className="mm sticky inline-block pl-4 top-1/2 -translate-y-1/2">
+        <span className="bb sticky inline-block pl-4 top-1/2 -translate-y-1/2">
           Experience
         </span>
-        <div className="h-screen w-full flex justify-center items-center px-4">
-          <h2 className="text-[22vw] tracking-tighter bb">also</h2>
+        <div className="h-screen w-full flex justify-center items-center textt px-4">
+          <h2 className="text-[20vw] tracking-tighter bb">also</h2>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-lg bb">I’m a designer specialising in</span>
         </div>
 
         <div className="building h-screen w-full text-center px-4">
-          <h2 className="text-[12vw] leading-[1] tracking-tighter bb">
+          <h2 className="text-[12vw] leading-[1] tracking-tighter textt">
             <span className="block overflow-hidden">
               <TextSplit text="building visual"></TextSplit>
             </span>
@@ -173,7 +173,7 @@ export default function About() {
           </h2>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <span className="text-5xl bb text-center w-[75%]">
+          <span className="text-5xl ll text-center w-[75%]">
             Recognized by Awwwards, CSSDA, and Mindsparkle Mag, I excel at
             transforming brand values into compelling visual narratives. Each
             project I undertake is driven by passion and precision, ensuring it
@@ -182,11 +182,11 @@ export default function About() {
         </div>
       </section>
       <section className="page5 relative">
-        <span className="mm sticky inline-block pl-4 top-1/2 -translate-y-1/2">
+        <span className="bb sticky inline-block pl-4 top-1/2 -translate-y-1/2">
           Self promotion
         </span>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <h2 className="text-[22vw] tracking-tighter bb">oh</h2>
+          <h2 className="text-[22vw] tracking-tighter textt">oh</h2>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-lg bb">
@@ -196,7 +196,7 @@ export default function About() {
         </div>
 
         <div className="h-screen w-full text-center px-4">
-          <h2 className="music text-[12vw] leading-[1] tracking-tighter bb">
+          <h2 className="music text-[10vw] leading-[1] tracking-tighter textt">
             <span className="block overflow-hidden">
               <TextSplit text="music is art"></TextSplit>
             </span>
@@ -216,7 +216,7 @@ export default function About() {
           </div>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <span className="text-5xl bb text-center w-[75%]">
+          <span className="text-5xl ll text-center w-[75%]">
             {`With eight years of experience in digital design, I've crafted
             extraordinary experiences that stand out. My journey has taken me
             through in-house roles, agency projects, and freelance ventures,

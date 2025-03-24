@@ -4,7 +4,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <section className="footer fixed custom-gradient z-[-1] bg-black text-white bottom-0 w-full  pt-[8vw]">
+      <section className="footer fixed custom-gradient z-[-1] bg-black text-white bottom-0 w-full pt-[8vw]">
         <div className="flex justify-between px-12 text-lg">
           <div className="flex flex-col gap-1">
             <h3 className="bb text-white/55">Contact Me</h3>
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
         <div className="pb-8  leading-0 pt-[2vw]">
           <div className="footer-text text-center">
-            <h2 className="text-[15.5vw] whitespace-nowrap tracking-wide mm font-extrabold leading-none">
+            <h2 className="text-[14vw] whitespace-nowrap tracking-wide textt font-extrabold leading-none">
               Anuj Kelodiya
             </h2>
           </div>
