@@ -77,7 +77,7 @@ const ContactForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="flex w-[75%] flex-col gap-10"
+        className="flex w-[75%] max-lg:w-full flex-col gap-10"
       >
         <FormField
           control={form.control}
@@ -153,7 +153,7 @@ const ContactForm = () => {
         <div className="flex justify-end">
           <Button
             disabled={isSubmitting}
-            className="w-full cursor-pointer text-xl rounded-none py-8 ll"
+            className="w-full cursor-pointer text-xl transition-all hover:text-yellow-500 rounded-none py-8 ll"
             type="submit"
           >
             Send

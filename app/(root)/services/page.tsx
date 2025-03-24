@@ -110,23 +110,25 @@ export default function Services() {
             <div className="line w-full h-[2px] bg-black"></div>
             <span className="bb inline-block py-4">THE MAIN PART</span>
             <div>
-              <h2 className="text-[6vw] textt tracking-tighter">Product Design</h2>
-              <p className="ll w-[80%] text-xl">
-                Most of my designs are not just about aesthetics, but about
-                developing logical, scalable design systems that are precisely
-                tailored to the web and app application. With a strong focus on
-                UI design and systemic design, I aim to create elements and
-                modules that are responsive, flexible and above all functional
-                and performant.
+              <h2 className="text-[6vw] textt tracking-tighter">
+                Product Design
+              </h2>
+              <p className="ll w-[90%] text-2xl">
+                My editing approach goes beyond mere visual assembly, focusing
+                on developing compelling, narrative-driven content that
+                resonates across digital platforms. With a strong emphasis on
+                storytelling, color grading, and motion graphics, I create
+                videos that are engaging, technically precise, and emotionally
+                impactful.
               </p>
             </div>
-            <div className="process pt-[6vw]">
-              <ProcessCard number="01" text="UX/UI Design" />
-              <ProcessCard number="02" text="UX/UI Design" />
-              <ProcessCard number="03" text="UX/UI Design" />
-              <ProcessCard number="04" text="UX/UI Design" />
-              <ProcessCard number="05" text="UX/UI Design" />
-              <ProcessCard number="06" text="UX/UI Design" />
+            <div className="process pt-[6vw] text-xl">
+              <ProcessCard number="01" text="Video Editing & Post-Production" />
+              <ProcessCard number="02" text="Motion Graphics Design" />
+              <ProcessCard number="03" text="Color Grading & Color Correction" />
+              <ProcessCard number="04" text="Sound Design & Audio Sync" />
+              <ProcessCard number="05" text="Promotional & Social Media Content" />
+              <ProcessCard number="06" text="Narrative Storytelling" />
             </div>
           </div>
         </div>
@@ -207,27 +209,27 @@ export default function Services() {
             <HorizontalCard
               number="(1)"
               title="Discovery"
-              para="Establishing a data-driven foundation through in-depth user research and competitive analysis."
+              para="Understand your vision, brand, and goals to align the editing process with your message."
             />
             <HorizontalCard
               number="(2)"
               title="Structure"
-              para="Establishing a data-driven foundation through in-depth user research and competitive analysis."
+              para="I create a solid editing plan to ensure consistency and smooth flow throughout the video."
             />
             <HorizontalCard
               number="(3)"
               title="Design"
-              para="Establishing a data-driven foundation through in-depth user research and competitive analysis."
+              para="I craft dynamic visuals—effects, transitions, and color grading—to enhance storytelling."
             />
             <HorizontalCard
               number="(4)"
               title="Build"
-              para="Establishing a data-driven foundation through in-depth user research and competitive analysis."
+              para="I assemble footage, audio, and graphics, editing them into a seamless narrative."
             />
             <HorizontalCard
               number="(5)"
               title="Scale"
-              para="Establishing a data-driven foundation through in-depth user research and competitive analysis."
+              para="I optimize the video for maximum impact across platforms, ensuring it performs well everywhere."
             />
           </div>
         </div>

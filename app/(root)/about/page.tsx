@@ -119,7 +119,7 @@ export default function About() {
           </h2>
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
-          <span className="text-lg bb">{`I’m Anuj and I've been`}</span>
+          <span className="text-lg bb">{`Hi, I’m Anuj`}</span>
         </div>
 
         <div className="creating h-screen w-full text-center px-4">
@@ -131,7 +131,7 @@ export default function About() {
               <TextSplit text="standout digital"></TextSplit>
             </span>
             <span className="block overflow-hidden">
-              <TextSplit text="design since"></TextSplit>
+              <TextSplit text="edit since"></TextSplit>
             </span>
             <span className="block overflow-hidden">
               <TextSplit text="2016"></TextSplit>
@@ -140,11 +140,9 @@ export default function About() {
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-5xl ll text-center w-[75%]">
-            {`With eight years of experience in digital design, I've crafted
-            extraordinary experiences that stand out. My journey has taken me
-            through in-house roles, agency projects, and freelance ventures,
-            working with industries such as luxury, audio, fintech, healthtech,
-            marketing, architecture, interior design, and video production.`}
+            {`As a dynamic video editor, I specialize in turning ordinary moments into extraordinary experiences. 
+            With technical skills across Premiere Pro, After Effects, DaVinci Resolve, and expanding 
+            motion graphics expertise, I craft visual stories that connect, engage, and captivate.`}
           </span>
         </div>
       </section>
@@ -174,10 +172,11 @@ export default function About() {
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-5xl ll text-center w-[75%]">
-            Recognized by Awwwards, CSSDA, and Mindsparkle Mag, I excel at
-            transforming brand values into compelling visual narratives. Each
-            project I undertake is driven by passion and precision, ensuring it
-            makes a lasting impression.
+            While my journey is just beginning, my commitment to creativity and
+            continuous learning drives every project. Each edit is a canvas,
+            where technical skill meets artistic vision to create memorable
+            visual experiences that transform ordinary moments into
+            extraordinary stories.
           </span>
         </div>
       </section>
@@ -217,11 +216,9 @@ export default function About() {
         </div>
         <div className="h-screen w-full flex justify-center items-center px-4">
           <span className="text-5xl ll text-center w-[75%]">
-            {`With eight years of experience in digital design, I've crafted
-            extraordinary experiences that stand out. My journey has taken me
-            through in-house roles, agency projects, and freelance ventures,
-            working with industries such as luxury, audio, fintech, healthtech,
-            marketing, architecture, interior design, and video production.`}
+            {`More than just music, this channel is a platform for thoughtful storytelling through hip-hop. 
+            Focused on creating meaningful lyrics that inspire and connect, each track aims to elevate the 
+            art form with depth, skill, and genuine expression.`}
           </span>
         </div>
       </section>

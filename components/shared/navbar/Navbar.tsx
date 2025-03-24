@@ -66,8 +66,9 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-            <span className="uppercase bb">
-              CREATIVE nomad, designing digital products & brands.
+            <span className="uppercase bb max-lg:text-sm">
+              Visual Alchemist, crafting cinematic edits & dynamic digital
+              stories.
             </span>
           </div>
           <div
@@ -109,7 +110,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="links overflow-hidden opacity-0 h-0">
-          <div className="flex justify-between gap-4 mt-4 overflow-hidden">
+          <div className="flex justify-between gap-4 mt-4 overflow-hidden max-lg:flex-col max-lg:gap-6 max-lg:text-2xl">
             <Link
               scroll={false}
               onClick={() => {
@@ -120,7 +121,7 @@ const Navbar = () => {
                 }
               }}
               href="/"
-              className="w-[20%]"
+              className="w-[20%] max-lg:w-full"
             >
               <div
                 className={`${
@@ -141,7 +142,7 @@ const Navbar = () => {
                 }
               }}
               href="/about"
-              className="w-[20%]"
+              className="w-[20%] max-lg:w-full"
             >
               <div
                 className={`${
@@ -165,7 +166,7 @@ const Navbar = () => {
                 }
               }}
               href="/work"
-              className="w-[20%]"
+              className="w-[20%] max-lg:w-full"
             >
               <div
                 className={`${
@@ -188,7 +189,7 @@ const Navbar = () => {
                 }
               }}
               href="/services"
-              className="w-[20%]"
+              className="w-[20%] max-lg:w-full"
             >
               <div
                 className={`${
@@ -211,7 +212,7 @@ const Navbar = () => {
                 }
               }}
               href="/contact"
-              className="w-[20%]"
+              className="w-[20%] max-lg:w-full"
             >
               <div
                 className={`${

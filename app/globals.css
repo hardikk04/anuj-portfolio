@@ -119,6 +119,28 @@ html {
   background-color: #f7f3ef;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f7f3ef; /* Dark background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #181818, #676767); /* Gradient effect */
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(
+    180deg,
+    #ff007f,
+    #ff8c00
+  ); /* Gradient hover effect */
+}
+
 ::selection {
   background-color: #000;
   color: #f7f3ef;

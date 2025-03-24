@@ -1,12 +1,25 @@
+"use client";
 import { getIndianTime } from "@/lib/getIndiaTime";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
 
 const Footer = () => {
+  const footerRef = useRef<HTMLDivElement | null>(null);
+  const emptyRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (footerRef.current && emptyRef.current) {
+      emptyRef.current.style.height = `${footerRef.current.clientHeight}px`;
+    }
+  }, []);
   return (
     <>
-      <section className="footer fixed custom-gradient z-[-1] bg-black text-white bottom-0 w-full pt-[8vw]">
-        <div className="flex justify-between px-12 text-lg">
-          <div className="flex flex-col gap-1">
+      <section
+        ref={footerRef}
+        className="footer fixed custom-gradient z-[-1] bg-black text-white bottom-0 w-full pt-[6vw] flex flex-col gap-6"
+      >
+        <div className="flex justify-between  px-12 text-lg max-lg:text-sm max-lg:flex-wrap max-sm:flex-col max-sm:gap-8 max-sm:text-lg">
+          <div className="flex flex-col gap-1 max-lg:w-1/2 max-sm:w-full">
             <h3 className="bb text-white/55">Contact Me</h3>
             <Link
               href={"tel:+917974374113"}
@@ -21,7 +34,7 @@ const Footer = () => {
               anujkelodiya.work@gmail.com
             </Link>
           </div>
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1 max-lg:w-1/2 max-lg:items-end max-lg:pb-[5vw] max-sm:w-full max-sm:items-start max-sm:pb-[0vw]">
             <h3 className="bb text-white/65">Follow Me</h3>
             <Link
               target="_blank"
@@ -48,17 +61,18 @@ const Footer = () => {
               <span>X</span>
             </Link>
           </div>
-          <div className="flex flex-col gap-1 w-[16%]">
+          <div className="flex flex-col gap-1 w-[22%] max-lg:w-1/2 max-sm:w-full">
             <span className="ll block">
-              dental care the way it should be focused on you and only you
+              Visual storytelling the way it should be crafted for impact,
+              designed for you.
             </span>
           </div>
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-5 max-lg:items-end max-lg:text-end max-sm:w-full max-sm:items-start max-sm:text-start">
             <div>
               <h3 className="bb text-white/65">Remote from India</h3>
               <span className="ll block">{`23° 1' 38.39" N / 77° 1' 5.89" E`}</span>
             </div>
-            <div>
+            <div className="max-sm:hidden">
               <h3 className="bb text-white/65">Local Time</h3>
               <span className="ll block">{getIndianTime()}</span>
             </div>
@@ -74,7 +88,7 @@ const Footer = () => {
                 </span>
               </span>
             </div>
-            <div className="mt-8">
+            <div className="mt-8 max-sm:hidden">
               <h3
                 onClick={() => {
                   window.scrollTo({ top: 0, behavior: "smooth" });
@@ -86,13 +100,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="pb-8  leading-0 pt-[2vw]">
+        <div className="pb-3 flex flex-col gap-2 max-sm:gap-4 leading-0 pt-[2vw]">
           <div className="footer-text text-center">
-            <h2 className="text-[14vw] whitespace-nowrap tracking-wide textt font-extrabold leading-none">
+            <h2 className="text-[14vw] max-lg:text-[13vw] mix-blend-difference whitespace-nowrap tracking-wide textt font-extrabold leading-none">
               Anuj Kelodiya
             </h2>
           </div>
-          <div className="text-center ll">
+          <div className="text-center ll max-lg:text-sm max-sm:text-lg">
             <span>
               design & developed by{" "}
               <span className="underline cursor-pointer">hardik</span>
@@ -102,7 +116,10 @@ const Footer = () => {
         </div>
       </section>
 
-      <section className="relative h-[80vh] w-full pointer-events-none"></section>
+      <section
+        ref={emptyRef}
+        className={`relative w-full pointer-events-none`}
+      ></section>
     </>
   );
 };

@@ -29,7 +29,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
-      <div className="mouse-follower mix-blend-difference pointer-events-none fixed h-[2.5vh] w-[2.5vh] rounded-full bg-red-50 z-10 top-[0%] opacity-0 left-0"></div>
+      <div className="mouse-follower max-lg:hidden mix-blend-difference pointer-events-none fixed h-[2.5vh] w-[2.5vh] rounded-full bg-red-50 z-10 top-[0%] opacity-0 left-0"></div>
       {children}
       <Contact />
       <Footer />

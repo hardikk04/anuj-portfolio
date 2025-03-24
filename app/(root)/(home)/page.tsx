@@ -28,7 +28,7 @@ export default function Home() {
     });
 
     gsap.from(".specialising span", {
-      transform: "translateY(100%)",
+      transform: "translateY(105%)",
       stagger: {
         amount: 1,
       },
@@ -70,25 +70,25 @@ export default function Home() {
 
   return (
     <div className="main bg bb text-black">
-      <section className="page1 w-full  pt-[10vw] py-[6vw] px-4">
+      <section className="page1 w-full  pt-[8vw] max-xl:pt-[12vw] max-lg:pt-[14vw] max-md:pt-[20vw] py-[6vw] px-4">
         <div>
           <div className="mb-[-2vw] ml-[12vw]">
             <span className="text-2xl">portfolio</span>
           </div>
           <div className="headline text-left">
-            <h1 className="text-[14vw] tracking-wide textt font-extrabold leading-none textt">
+            <h1 className="text-[14vw] max-lg:text-[16vw] tracking-wide textt font-extrabold leading-none textt">
               AK Studio
             </h1>
           </div>
           <div className="position ml-[40vw]">
-            <span className="text-2xl">senior video editor</span>
+            <span className="text-2xl">Visual Artist</span>
           </div>
         </div>
-        <div className="flex justify-end w-full pt-[4vw]">
-          <div className="w-[30%]">
+        <div className="flex justify-end w-full pt-[4vw] max-xl:pt-[6vw]">
+          <div className="w-[30%] max-xl:w-[35%] max-lg:w-[55%] max-md:w-[65%] max-sm:w-[75%]">
             <p className="ll text-2xl">
-              Enhance your GSAP skills with a range of 50 unique and
-              well-crafted effects.
+              Elevate your visuals with cinematic edits & seamless motion
+              effects.
             </p>
             <div className="mt-6">
               <Link
@@ -99,15 +99,15 @@ export default function Home() {
                   });
                 }}
                 href="/contact"
-                className="text-white bg-black px-6 py-3 "
+                className="btn text-white bg-black relative overflow-hidden transition-all hover:text-yellow-500 hover:bg-primary/90 px-6 py-3 max-sm:px-12"
               >
-                Book a Call
+                Let’s talk
               </Link>
             </div>
           </div>
         </div>
       </section>
-      <section className="page2 w-full h-screen relative px-4">
+      <section className="page2 w-full h-screen max-lg:h-[90vh] max-md:h-[75vh] max-sm:h-[50vh] relative px-4">
         <video
           className="w-full h-full object-cover"
           autoPlay
@@ -117,7 +117,7 @@ export default function Home() {
         ></video>
       </section>
       <section className="page3 w-full px-4 flex pt-[14vw]">
-        <div className="role-model w-[32%] h-[150vh] overflow-hidden">
+        <div className="role-model w-[32%] max-xl:w-[40%] max-md:w-[55%] h-[150vh] overflow-hidden">
           <Image
             className="h-full w-full object-cover"
             src="https://cdn.prod.website-files.com/666066030b1447405865fff8/674ef4bbe8fcbec7ae18ca8b_Filip%20Felbar%20-%20Intro%20Image-p-1600.webp"
@@ -126,27 +126,27 @@ export default function Home() {
             width={1000}
           />
         </div>
-        <div className="text px-4 flex flex-col justify-between">
+        <div className="text px-4 pr-0 max-lg:pl-2 flex flex-col justify-between">
           <div>
-            <h2 className="position-title text-[5vw] bb leading-none tracking-tighter">
+            <h2 className="position-title text-[5vw] max-md:text-[27px] bb leading-[1] tracking-tighter">
               <span className="line line1 block overflow-hidden">
-                <TextSplit text="senior digital"></TextSplit>
+                <TextSplit text="Senior Video"></TextSplit>
               </span>
 
               <span className="line block line2 overflow-hidden">
-                <TextSplit text="designer helping"></TextSplit>
+                <TextSplit text="Editor crafting"></TextSplit>
               </span>
 
               <span className="line block line3 overflow-hidden">
-                <TextSplit text="brands communicate"></TextSplit>
+                <TextSplit text="compelling visuals"></TextSplit>
               </span>
 
               <span className="line block line4 overflow-hidden">
-                <TextSplit text="with their audience in"></TextSplit>
+                <TextSplit text="that captivate and"></TextSplit>
               </span>
 
               <span className="line line5 block overflow-hidden">
-                <TextSplit text="a meaningful way"></TextSplit>
+                <TextSplit text="engage audiences."></TextSplit>
               </span>
             </h2>
           </div>
@@ -158,31 +158,34 @@ export default function Home() {
             />
           </div>
 
-          <div className="specialising bb">
-            <span className="text-5xl block overflow-hidden">
+          <div className="specialising bb text-5xl max-xl:text-4xl max-md:text-[23px]">
+            <span className="block overflow-hidden">
               <TextSplit text="specialising in:"></TextSplit>
             </span>
-            <span className="text-5xl block overflow-hidden">
-              <TextSplit text="digital design"></TextSplit>
+            <span className="block overflow-hidden">
+              <TextSplit text="Video Editing"></TextSplit>
             </span>
-            <span className="text-5xl block overflow-hidden">
-              <TextSplit text="branding"></TextSplit>
+            <span className="block overflow-hidden">
+              <TextSplit text="Motion Graphics"></TextSplit>
             </span>
-            <span className="text-5xl block overflow-hidden">
-              <TextSplit text="web experiences"></TextSplit>
+            <span className="block overflow-hidden">
+              <TextSplit text="VFX"></TextSplit>
             </span>
-            <span className="text-5xl block overflow-hidden">
-              <TextSplit text="webflow development"></TextSplit>
+            <span className="block overflow-hidden">
+              <TextSplit text="Social Media Content"></TextSplit>
             </span>
-            <span className="text-5xl block overflow-hidden">
-              <TextSplit text="art direction"></TextSplit>
+            <span className="block overflow-hidden">
+              <TextSplit text="Visual Storytelling"></TextSplit>
+            </span>
+            <span className="block overflow-hidden">
+              <TextSplit text="Brand-Focused Edits"></TextSplit>
             </span>
           </div>
         </div>
       </section>
       <section className="page4 w-full px-4 pt-[10vw]">
         <div className="title text-center">
-          <h2 className="work-section text-[10vw] leading-[.9] textt tracking-tighter font-extrabold">
+          <h2 className="work-section text-[10vw] max-lg:text-[14vw] max-sm:text-[16vw] leading-[.9] textt tracking-tighter font-extrabold">
             <span className="line block overflow-hidden">
               <TextSplit text="selected"></TextSplit>
             </span>
@@ -191,11 +194,11 @@ export default function Home() {
             </span>
           </h2>
         </div>
-        <div className="para text-center text-4xl ll flex justify-center pt-[6vw]">
-          <p className="w-[70%]">
-            a selection of projects that represent my approach to design and
-            development. Each piece is crafted with a focus on detail,
-            innovation, and effectiveness.
+        <div className="para text-center text-4xl max-md:text-3xl ll flex justify-center pt-[6vw]">
+          <p className="w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-md:w-full">
+            A collection of visually striking edits that showcase my
+            storytelling, precision, and creative vision. Each project is
+            crafted to captivate, engage, and leave a lasting impact.
           </p>
         </div>
         <div className="projects bb flex justify-center pt-[6vw]">
