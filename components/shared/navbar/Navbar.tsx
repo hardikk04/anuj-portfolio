@@ -64,11 +64,11 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-          </div>
             <span className="uppercase bb max-lg:text-xs text-[#f7f3ef]">
               Visual Alchemist, crafting cinematic edits{" "}
               <span className="max-sm:hidden">& dynamic digital stories.</span>
             </span>
+          </div>
           <div
             onClick={() => {
               if (!flag) {
