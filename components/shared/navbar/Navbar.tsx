@@ -56,7 +56,7 @@ const Navbar = () => {
                 href="/"
               >
                 <Image
-                  src={"/img/main-logo.webp"}
+                  src={"/img/head-logo.webp"}
                   alt="logo"
                   width={30}
                   height={30}
@@ -64,11 +64,11 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
+          </div>
             <span className="uppercase bb max-lg:text-xs text-[#f7f3ef]">
               Visual Alchemist, crafting cinematic edits{" "}
               <span className="max-sm:hidden">& dynamic digital stories.</span>
             </span>
-          </div>
           <div
             onClick={() => {
               if (!flag) {
