@@ -5,7 +5,7 @@ import PortraitWorks from "@/components/work/PortraitWorks";
 import ReelCard from "@/components/work/ReelCard";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import React from "react";
+import React, { useEffect } from "react";
 
 export default function Work() {
   useGSAP(() => {
@@ -23,6 +23,11 @@ export default function Work() {
       },
     });
   });
+
+  useEffect(() => {
+    document.title = "Anuj Kelodiya - Work";
+  }, []);
+
   return (
     <div className="main bg mm text-black">
       <section className="page1 w-full pt-[12vw] px-4 pb-[4vw] max-lg:pt-[20vw] max-md:pt-[24vw] max-sm:pt-[30vw] max-sm:pb-[6vw]">

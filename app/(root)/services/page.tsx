@@ -12,11 +12,9 @@ import {
 } from "@/components/ui/accordion";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useRef } from "react";
+import { useEffect } from "react";
 
 export default function Services() {
-  const scrollRef = useRef<HTMLDivElement | null>(null);
-
   useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -86,6 +84,10 @@ export default function Services() {
         // markers: true,
       },
     });
+  }, []);
+
+  useEffect(() => {
+    document.title = "Anuj Kelodiya - Services";
   }, []);
   return (
     <div className="main bg mm text-black">
@@ -207,10 +209,7 @@ export default function Services() {
           <div className="inner-line w-0 h-full bg-black"></div>
         </div>
         <div className="horizontal w-full relative">
-          <div
-            ref={scrollRef}
-            className="horizontal-scroller w-full relative flex pt-[8vw]"
-          >
+          <div className="horizontal-scroller w-full relative flex pt-[8vw]">
             <HorizontalCard
               number="(1)"
               title="Discovery"

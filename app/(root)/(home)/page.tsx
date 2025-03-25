@@ -78,7 +78,7 @@ export default function Home() {
           </div>
           <div className="headline text-left">
             <h1 className="text-[14vw] max-lg:text-[16vw] tracking-wide textt font-extrabold leading-none textt">
-              AK Studio
+              AK Studios
             </h1>
           </div>
           <div className="position ml-[40vw]">

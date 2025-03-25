@@ -106,10 +106,16 @@ const Footer = () => {
               Anuj Kelodiya
             </h2>
           </div>
-          <div className="text-center ll max-lg:text-sm max-sm:text-sm">
+          <div className="text-center ll max-lg:text-sm max-sm:text-sm relative z-[1]">
             <span>
               design & developed by{" "}
-              <span className="underline cursor-pointer">hardik</span>
+              <Link
+                target="_blank"
+                href={"https://www.linkedin.com/in/hardik-sisodiya-007b9b226/"}
+                className="underline cursor-pointer"
+              >
+                hardik
+              </Link>
               <i className="ri-heart-fill"></i> | copyright © 2025
             </span>
           </div>

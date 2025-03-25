@@ -57,12 +57,12 @@ const Navbar = () => {
               >
                 <Image
                   src={
-                    "https://cdn.prod.website-files.com/637853f6f3d6aacb22fa97db/638c61879bf1380112df5835_Group%2076.svg"
+                    "/img/main-logo.webp"
                   }
                   alt="logo"
                   width={30}
                   height={30}
-                  className="object-cover"
+                  className="object-cover rounded-xs"
                 ></Image>
               </Link>
             </div>
