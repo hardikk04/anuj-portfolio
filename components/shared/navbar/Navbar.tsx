@@ -40,7 +40,7 @@ const Navbar = () => {
           : "-translate-y-[150%] transition-all duration-500 ease-in-out"
       }`}
     >
-      <div className="w-[98%] bg-white px-4 py-3 rounded-xl ">
+      <div className="w-[98%] custom-gradient text-white px-4 py-3 rounded-xl ">
         <div className="w-full flex justify-between items-center">
           <div className="nav-left flex gap-2 items-center mm">
             <div className="nav-logo">
@@ -66,15 +66,19 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-            <span className="uppercase bb max-lg:text-sm">
-              Visual Alchemist, crafting cinematic edits & dynamic digital
-              stories.
+            <span className="uppercase bb max-lg:text-xs">
+              Visual Alchemist, crafting cinematic edits{" "}
+              <span className="max-sm:hidden">& dynamic digital stories.</span>
             </span>
           </div>
           <div
             onClick={() => {
               if (!flag) {
-                gsap.to(".links", {
+                const tl = gsap.timeline();
+                tl.to(".main", {
+                  filter: " blur(12px)",
+                });
+                tl.to(".links", {
                   height: "auto",
                   ease: "power2.in",
                   duration: 0.5,
@@ -86,7 +90,8 @@ const Navbar = () => {
                 });
                 setFlag(true);
               } else {
-                gsap.to(".links", {
+                const tl = gsap.timeline();
+                tl.to(".links", {
                   overflow: "hidden",
                   height: "0",
                   ease: "power2.in",
@@ -96,6 +101,9 @@ const Navbar = () => {
                       opacity: 0,
                     });
                   },
+                });
+                tl.to(".main", {
+                  filter: " blur(0px)",
                 });
                 setFlag(false);
               }
@@ -125,11 +133,13 @@ const Navbar = () => {
             >
               <div
                 className={`${
-                  pathname === "/" ? "bg-black rounded-[.5vw] text-white" : ""
-                } nav-link overflow-hidden hover:text-white hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
+                  pathname === "/"
+                    ? "bg-[#f7f3ef] rounded-[.5vw] text-black"
+                    : ""
+                } nav-link overflow-hidden hover:text-black hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
               >
                 <h2 className="mm text-2xl relative">Home</h2>
-                <span className="mm relative">↗</span>
+                <span className="mm relative max-sm:hidden">↗</span>
               </div>
             </Link>
             <Link
@@ -147,13 +157,13 @@ const Navbar = () => {
               <div
                 className={`${
                   pathname === "/about"
-                    ? "bg-black rounded-[.5vw] text-white"
+                    ? "bg-[#f7f3ef] rounded-[.5vw] text-black"
                     : ""
                 }
-                 nav-link overflow-hidden hover:text-white hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
+                 nav-link overflow-hidden hover:text-black hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
               >
                 <h2 className="mm text-2xl relative">About</h2>
-                <span className="mm relative">↗</span>
+                <span className="mm relative max-sm:hidden">↗</span>
               </div>
             </Link>
             <Link
@@ -171,12 +181,12 @@ const Navbar = () => {
               <div
                 className={`${
                   pathname === "/work"
-                    ? "bg-black rounded-[.5vw] text-white"
+                    ? "bg-[#f7f3ef] rounded-[.5vw] text-black"
                     : ""
-                } nav-link overflow-hidden hover:text-white hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
+                } nav-link overflow-hidden hover:text-black hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
               >
                 <h2 className="mm text-2xl relative">Work</h2>
-                <span className="mm relative">↗</span>
+                <span className="mm relative max-sm:hidden">↗</span>
               </div>
             </Link>
             <Link
@@ -194,12 +204,12 @@ const Navbar = () => {
               <div
                 className={`${
                   pathname === "/services"
-                    ? "bg-black rounded-[.5vw] text-white"
+                    ? "bg-[#f7f3ef] rounded-[.5vw] text-black"
                     : ""
-                } nav-link overflow-hidden hover:text-white hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
+                } nav-link overflow-hidden hover:text-black hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
               >
                 <h2 className="mm text-2xl relative">Services</h2>
-                <span className="mm relative">↗</span>
+                <span className="mm relative max-sm:hidden">↗</span>
               </div>
             </Link>
             <Link
@@ -217,12 +227,12 @@ const Navbar = () => {
               <div
                 className={`${
                   pathname === "/contact"
-                    ? "bg-black rounded-[.5vw] text-white"
+                    ? "bg-[#f7f3ef] rounded-[.5vw] text-black"
                     : ""
-                } nav-link overflow-hidden hover:text-white hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
+                } nav-link overflow-hidden hover:text-black hover:px-[1.5vw] z-[1] relative w-full border p-3 flex justify-between items-center`}
               >
                 <h2 className="mm text-2xl relative">Contact</h2>
-                <span className="mm relative">↗</span>
+                <span className="mm relative max-sm:hidden">↗</span>
               </div>
             </Link>
           </div>

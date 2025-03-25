@@ -57,10 +57,10 @@ const TextStaggerAnimation = ({ href, text, className, isNew }: TextProps) => {
       }}
       className={`${className} bb overflow-hidden bg-white `}
     >
-      <span className="text-5xl max-lg:text-3xl  block px-2">
+      <span className="text-5xl max-lg:text-3xl max-sm:text-xl  block px-2">
         <TextSplit text={text}></TextSplit>
       </span>
-      <span className="text-5xl max-lg:text-3xl bg-[#f0e9e4] h-0 block px-2">
+      <span className="text-5xl max-lg:text-3xl max-sm:text-xl bg-[#f0e9e4] h-0 block px-2">
         <TextSplit text={text}></TextSplit>
       </span>
     </Link>

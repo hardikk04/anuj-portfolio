@@ -6,7 +6,7 @@ const ProcessCard = ({ number, text }: { number: string; text: string }) => {
       <div className="line w-full h-[2px] bg-black/20"></div>
       <div className="flex gap-[16vw] pt-4 pb-12 bb">
         <span className="textt">{number}</span>
-        <span className="bb">{text}</span>
+        <span className="bb max-md:text-lg max-sm:text-sm">{text}</span>
       </div>
     </>
   );

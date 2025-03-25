@@ -18,7 +18,7 @@ const Footer = () => {
         ref={footerRef}
         className="footer fixed custom-gradient z-[-1] bg-black text-white bottom-0 w-full pt-[6vw] flex flex-col gap-6"
       >
-        <div className="flex justify-between  px-12 text-lg max-lg:text-sm max-lg:flex-wrap max-sm:flex-col max-sm:gap-8 max-sm:text-lg">
+        <div className="flex justify-between px-12 max-sm:px-4 text-lg max-lg:text-sm  max-lg:flex-wrap max-sm:flex-col max-sm:gap-8 max-sm:text-sm">
           <div className="flex flex-col gap-1 max-lg:w-1/2 max-sm:w-full">
             <h3 className="bb text-white/55">Contact Me</h3>
             <Link
@@ -106,7 +106,7 @@ const Footer = () => {
               Anuj Kelodiya
             </h2>
           </div>
-          <div className="text-center ll max-lg:text-sm max-sm:text-lg">
+          <div className="text-center ll max-lg:text-sm max-sm:text-sm">
             <span>
               design & developed by{" "}
               <span className="underline cursor-pointer">hardik</span>

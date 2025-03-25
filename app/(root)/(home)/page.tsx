@@ -2,6 +2,7 @@
 
 import TextSplit from "@/components/shared/animations/TextSplit";
 import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnimation";
+import Showreel from "@/components/shared/Showreel";
 import PortraitWorks from "@/components/work/PortraitWorks";
 import { slideInOut } from "@/utils/slideInOut";
 import { useGSAP } from "@gsap/react";
@@ -70,10 +71,10 @@ export default function Home() {
 
   return (
     <div className="main bg bb text-black">
-      <section className="page1 w-full  pt-[8vw] max-xl:pt-[12vw] max-lg:pt-[14vw] max-md:pt-[20vw] py-[6vw] px-4">
+      <section className="page1 w-full pt-[8vw] max-xl:pt-[12vw] max-lg:pt-[14vw] max-md:pt-[20vw] max-sm:pt-[28vw] max-sm:pb-[10vw] py-[6vw] px-4">
         <div>
           <div className="mb-[-2vw] ml-[12vw]">
-            <span className="text-2xl">portfolio</span>
+            <span className="text-2xl max-sm:text-lg">portfolio</span>
           </div>
           <div className="headline text-left">
             <h1 className="text-[14vw] max-lg:text-[16vw] tracking-wide textt font-extrabold leading-none textt">
@@ -81,12 +82,12 @@ export default function Home() {
             </h1>
           </div>
           <div className="position ml-[40vw]">
-            <span className="text-2xl">Visual Artist</span>
+            <span className="text-2xl max-sm:text-lg">Visual Artist</span>
           </div>
         </div>
         <div className="flex justify-end w-full pt-[4vw] max-xl:pt-[6vw]">
-          <div className="w-[30%] max-xl:w-[35%] max-lg:w-[55%] max-md:w-[65%] max-sm:w-[75%]">
-            <p className="ll text-2xl">
+          <div className="w-[30%] max-xl:w-[35%] max-lg:w-[55%] max-md:w-[65%] max-sm:w-[80%]">
+            <p className="ll text-2xl max-sm:text-lg">
               Elevate your visuals with cinematic edits & seamless motion
               effects.
             </p>
@@ -99,7 +100,7 @@ export default function Home() {
                   });
                 }}
                 href="/contact"
-                className="btn text-white bg-black relative overflow-hidden transition-all hover:text-yellow-500 hover:bg-primary/90 px-6 py-3 max-sm:px-12"
+                className="btn text-white bg-black relative overflow-hidden transition-all hover:text-yellow-500 hover:bg-primary/90 px-6 py-3 max-sm:px-12 max-sm:text-sm"
               >
                 Let’s talk
               </Link>
@@ -107,15 +108,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="page2 w-full h-screen max-lg:h-[90vh] max-md:h-[75vh] max-sm:h-[50vh] relative px-4">
-        <video
-          className="w-full h-full object-cover"
-          autoPlay
-          loop
-          muted
-          src="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"
-        ></video>
-      </section>
+      <Showreel link="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"></Showreel>
       <section className="page3 w-full px-4 flex pt-[14vw]">
         <div className="role-model w-[32%] max-xl:w-[40%] max-md:w-[55%] h-[150vh] overflow-hidden">
           <Image
@@ -128,7 +121,7 @@ export default function Home() {
         </div>
         <div className="text px-4 pr-0 max-lg:pl-2 flex flex-col justify-between">
           <div>
-            <h2 className="position-title text-[5vw] max-md:text-[27px] bb leading-[1] tracking-tighter">
+            <h2 className="position-title text-[5vw] max-md:text-[27px] max-sm:text-[5vw] bb leading-[1] tracking-tighter">
               <span className="line line1 block overflow-hidden">
                 <TextSplit text="Senior Video"></TextSplit>
               </span>
@@ -158,7 +151,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="specialising bb text-5xl max-xl:text-4xl max-md:text-[23px]">
+          <div className="specialising bb text-5xl max-xl:text-4xl max-md:text-[23px] max-sm:text-[3.6vw]">
             <span className="block overflow-hidden">
               <TextSplit text="specialising in:"></TextSplit>
             </span>
@@ -194,7 +187,7 @@ export default function Home() {
             </span>
           </h2>
         </div>
-        <div className="para text-center text-4xl max-md:text-3xl ll flex justify-center pt-[6vw]">
+        <div className="para text-center text-4xl max-md:text-3xl max-sm:text-xl ll flex justify-center pt-[6vw]">
           <p className="w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-md:w-full">
             A collection of visually striking edits that showcase my
             storytelling, precision, and creative vision. Each project is

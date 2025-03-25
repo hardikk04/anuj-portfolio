@@ -14,7 +14,7 @@ const Contact = () => {
           </span>
         </h2>
       </div>
-      <div className="contact-para text-center text-4xl max-md:text-3xl ll flex justify-center pt-[6vw]">
+      <div className="contact-para text-center text-4xl max-md:text-3xl max-sm:text-xl ll flex justify-center pt-[6vw]">
         <p className="w-[70%] max-xl:w-[80%] max-lg:w-[90%] max-md:w-full">
           {`Got a project that needs a cinematic touch? Let’s create something
           impactful together. Whether it’s high-quality edits, creative
