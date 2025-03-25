@@ -17,7 +17,7 @@ export default function RootLayout({
     <ViewTransitions>
       <html lang="en">
         <head>
-          <link rel="icon" href="/img/main-logo.webp" />
+          <link rel="icon" href="/img/head-logo.png" />
           <link
             href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
             rel="stylesheet"

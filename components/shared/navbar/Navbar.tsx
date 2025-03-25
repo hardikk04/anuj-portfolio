@@ -56,9 +56,7 @@ const Navbar = () => {
                 href="/"
               >
                 <Image
-                  src={
-                    "/img/main-logo.webp"
-                  }
+                  src={"/img/main-logo.webp"}
                   alt="logo"
                   width={30}
                   height={30}
@@ -66,7 +64,7 @@ const Navbar = () => {
                 ></Image>
               </Link>
             </div>
-            <span className="uppercase bb max-lg:text-xs">
+            <span className="uppercase bb max-lg:text-xs text-[#f7f3ef]">
               Visual Alchemist, crafting cinematic edits{" "}
               <span className="max-sm:hidden">& dynamic digital stories.</span>
             </span>
@@ -112,8 +110,10 @@ const Navbar = () => {
           >
             <i
               className={`${
-                !flag ? "ri-menu-3-line" : "ri-close-large-fill"
-              } text-3xl`}
+                !flag
+                  ? "ri-menu-3-line"
+                  : "ri-close-large-fill"
+              } text-3xl text-[#f7f3ef]`}
             ></i>
           </div>
         </div>
