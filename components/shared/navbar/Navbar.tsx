@@ -72,11 +72,10 @@ const Navbar = () => {
           <div
             onClick={() => {
               if (!flag) {
-                const tl = gsap.timeline();
-                tl.to(".main", {
+                gsap.to(".main", {
                   filter: " blur(12px)",
                 });
-                tl.to(".links", {
+                gsap.to(".links", {
                   height: "auto",
                   ease: "power2.in",
                   duration: 0.5,
@@ -88,8 +87,7 @@ const Navbar = () => {
                 });
                 setFlag(true);
               } else {
-                const tl = gsap.timeline();
-                tl.to(".links", {
+                gsap.to(".links", {
                   overflow: "hidden",
                   height: "0",
                   ease: "power2.in",
@@ -100,7 +98,7 @@ const Navbar = () => {
                     });
                   },
                 });
-                tl.to(".main", {
+                gsap.to(".main", {
                   filter: " blur(0px)",
                 });
                 setFlag(false);
@@ -110,9 +108,7 @@ const Navbar = () => {
           >
             <i
               className={`${
-                !flag
-                  ? "ri-menu-3-line"
-                  : "ri-close-large-fill"
+                !flag ? "ri-menu-3-line" : "ri-close-large-fill"
               } text-3xl text-[#f7f3ef]`}
             ></i>
           </div>

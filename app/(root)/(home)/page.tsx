@@ -108,7 +108,7 @@ export default function Home() {
             </span>
           </div>
           <div className="home-heading text-left">
-            <h1 className="text-[14vw] max-lg:text-[16vw] tracking-wide textt font-extrabold leading-none overflow-hidden">
+            <h1 className="text-[14vw] max-lg:text-[16vw] max-sm:text-[14vw] tracking-wide textt font-extrabold leading-none overflow-hidden">
               <TextSplit text="AK Studios"></TextSplit>
             </h1>
           </div>

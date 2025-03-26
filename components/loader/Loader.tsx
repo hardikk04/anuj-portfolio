@@ -26,7 +26,7 @@ const Loader = () => {
   }, []);
 
   return (
-    <div className="loader text-6xl custom-gradient fixed top-0 left-0 h-screen w-full bg-black z-50 flex justify-center items-center">
+    <div className="loader text-6xl max-lg:text-3xl text-center custom-gradient fixed top-0 left-0 h-screen w-full bg-black z-50 flex justify-center items-center">
       <h2 className={`text-white ${greetings[index].font}`}>
         {greetings[index].greeting}
       </h2>
