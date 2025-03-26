@@ -128,7 +128,48 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #181818, #676767); /* Gradient effect */
+  background: radial-gradient(
+      circle at 0% 54.66%,
+      #00125d 0%,
+      7.5%,
+      rgba(0, 18, 93, 0) 25%
+    ),
+    radial-gradient(
+      circle at 100% 43.13%,
+      #4d489d 0%,
+      7.5%,
+      rgba(77, 72, 157, 0) 25%
+    ),
+    radial-gradient(
+      circle at 94.35% 89.61%,
+      #000000 0%,
+      30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      circle at 9.54% 88.4%,
+      #000000 0%,
+      30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      circle at 7.49% 11.12%,
+      #000000 0%,
+      30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      circle at 93.68% 11.42%,
+      #000000 0%,
+      30%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    radial-gradient(
+      circle at 48.9% 49.52%,
+      #000000 0%,
+      100%,
+      rgba(0, 0, 0, 0) 100%
+    );
   border-radius: 10px;
   transition: all 0.3s ease;
 }
@@ -136,8 +177,8 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(
     180deg,
-    #ff007f,
-    #ff8c00
+    #00125d,
+    #4d489d
   ); /* Gradient hover effect */
 }
 

@@ -1,11 +1,13 @@
 import gsap from "gsap";
 
 export const slideInOut = (text: string) => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+
   gsap.to(".links", {
     height: "0",
   });
 
-  if (text) {
+  if (text !== "home") {
     gsap.from(`.${text.replace(/^\//, "")}-heading span`, {
       transform: "translateY(100%)",
       delay: 1.2,

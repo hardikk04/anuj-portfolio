@@ -1,5 +1,6 @@
 "use client";
 
+import Loader from "@/components/loader/Loader";
 import TextSplit from "@/components/shared/animations/TextSplit";
 import TextStaggerAnimation from "@/components/shared/animations/TextStaggerAnimation";
 import Showreel from "@/components/shared/Showreel";
@@ -10,10 +11,10 @@ import gsap from "gsap";
 import { useTransitionRouter } from "next-view-transitions";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 export default function Home() {
   const router = useTransitionRouter();
-
   useGSAP(() => {
     gsap.from(".position-title span", {
       transform: "translateY(100%)",
@@ -69,23 +70,55 @@ export default function Home() {
     });
   }, []);
 
+  const loaded = () => {
+    const tl = gsap.timeline();
+
+    const headingAnimation = gsap.from(`.home-heading span`, {
+      transform: "translateY(100%)",
+      stagger: {
+        amount: 0.6,
+      },
+      paused: true,
+    });
+    
+
+    tl.to(".loader", {
+      top: "-100%",
+      delay: Math.random() * (3 - 1.5) + 1.5,
+      duration: 1,
+      onComplete: () => {
+        if (headingAnimation) headingAnimation.play();
+      },
+      ease: "expo.inOut",
+    });
+  };
+
+  useEffect(() => {
+    loaded();
+  }, []);
+
   return (
     <div className="main bg bb text-black">
+      <Loader />
       <section className="page1 w-full pt-[8vw] max-xl:pt-[12vw] max-lg:pt-[14vw] max-md:pt-[20vw] max-sm:pt-[28vw] max-sm:pb-[10vw] py-[6vw] px-4">
         <div>
           <div className="mb-[-2vw] ml-[12vw]">
-            <span className="text-2xl max-sm:text-lg">portfolio</span>
+            <span className="text-2xl max-sm:text-lg secondary-text">
+              portfolio
+            </span>
           </div>
-          <div className="headline text-left">
-            <h1 className="text-[14vw] max-lg:text-[16vw] tracking-wide textt font-extrabold leading-none textt">
-              AK Studios
+          <div className="home-heading text-left">
+            <h1 className="text-[14vw] max-lg:text-[16vw] tracking-wide textt font-extrabold leading-none overflow-hidden">
+              <TextSplit text="AK Studios"></TextSplit>
             </h1>
           </div>
           <div className="position ml-[40vw]">
-            <span className="text-2xl max-sm:text-lg">Visual Artist</span>
+            <span className="text-2xl max-sm:text-lg secondary-text">
+              Visual Artist
+            </span>
           </div>
         </div>
-        <div className="flex justify-end w-full pt-[4vw] max-xl:pt-[6vw]">
+        <div className="secondary-text flex justify-end w-full pt-[4vw] max-xl:pt-[6vw]">
           <div className="w-[30%] max-xl:w-[35%] max-lg:w-[55%] max-md:w-[65%] max-sm:w-[80%]">
             <p className="ll text-2xl max-sm:text-lg">
               Elevate your visuals with cinematic edits & seamless motion

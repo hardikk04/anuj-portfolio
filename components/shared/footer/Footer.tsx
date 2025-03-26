@@ -22,10 +22,10 @@ const Footer = () => {
           <div className="flex flex-col gap-1 max-lg:w-1/2 max-sm:w-full">
             <h3 className="bb text-white/55">Contact Me</h3>
             <Link
-              href={"tel:+917974374113"}
+              href={"tel:+919399142719"}
               className="ll block hover:opacity-85 transition-all"
             >
-              +91 7974374113
+              +91 9399142719
             </Link>
             <Link
               href={"mailto:anujkelodiya.work@gmail.com"}
