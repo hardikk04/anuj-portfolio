@@ -77,8 +77,8 @@ const Navbar = () => {
                 });
                 gsap.to(".links", {
                   height: "auto",
-                  ease: "power2.in",
-                  duration: 0.5,
+                  duration: 1,
+                  ease: "expo.inOut",
                   onComplete: () => {
                     gsap.to(".links", {
                       opacity: 1,
@@ -90,8 +90,9 @@ const Navbar = () => {
                 gsap.to(".links", {
                   overflow: "hidden",
                   height: "0",
-                  ease: "power2.in",
-                  duration: 0.5,
+                  ease: "expo.inOut",
+
+                  duration: 0.7,
                   onComplete: () => {
                     gsap.to(".links", {
                       opacity: 0,
