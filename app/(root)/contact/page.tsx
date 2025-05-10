@@ -33,7 +33,7 @@ export default function Contact() {
           </h1>
         </div>
       </section>
-      <Showreel link="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"></Showreel>
+      <Showreel link="/img/temp.png"></Showreel>
     </div>
   );
 }
