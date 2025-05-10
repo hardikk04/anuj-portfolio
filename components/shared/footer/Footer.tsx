@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
             <Link
               target="_blank"
-              href={"https://www.instagram.com/anujkelodiya"}
+              href={"https://www.linkedin.com/in/anujkelodiya"}
               className="ll group flex items-center gap-1"
             >
               <i className="ri-linkedin-box-fill text-2xl  transition-all group-hover:text-blue-500 opacity-50 mr-1"></i>{" "}

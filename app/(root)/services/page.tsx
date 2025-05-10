@@ -98,7 +98,7 @@ export default function Services() {
           </h1>
         </div>
       </section>
-      <Showreel link="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"></Showreel>
+      <Showreel link="/img/temp.png"></Showreel>
       <section className="page3 relative p-4">
         <span className="textt sticky inline-block top-20 left-0 text-[18vw] max-lg:text-[15vw] max-md:text-[14vw] max-sm:text-[12vw] tracking-tighter leading-none">
           01

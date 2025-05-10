@@ -38,9 +38,9 @@ export default function Work() {
         </div>
       </section>
       <section className="page2 w-full relative pt-[0vw]">
-        <PortraitWorks link="/video/dan.mp4" />
-        <PortraitWorks link="/video/dan.mp4" />
-        <PortraitWorks link="/video/dan.mp4" />
+        <PortraitWorks link="/video/horizontal/1.mp4" />
+        <PortraitWorks link="/video/horizontal/2.mp4" />
+        <PortraitWorks link="/video/horizontal/3.mp4" />
       </section>
       <section className="page3 relative px-4">
         <h2 className="textt text-[10vw] max-lg:text-[14vw] max-sm:text-[16vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 ">
@@ -50,31 +50,31 @@ export default function Work() {
           <div className="w-full flex py-[4vw]">
             <ReelCard
               index="1"
-              link="https://images.unsplash.com/photo-1741627872533-52df24885303?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              link="/video/vertical/1.mp4"
             />
           </div>
           <div className="w-full flex justify-end py-[8vw] relative z-[1]">
             <ReelCard
               index="2"
-              link="https://images.unsplash.com/photo-1741627872533-52df24885303?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              link="/video/vertical/2.mp4"
             />
           </div>
           <div className="w-full flex py-[4vw] relative z-[1]">
             <ReelCard
               index="3"
-              link="https://images.unsplash.com/photo-1741627872533-52df24885303?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              link="/video/vertical/3.mp4"
             />
           </div>
           <div className="w-full flex justify-end py-[8vw] relative z-[1]">
             <ReelCard
               index="4"
-              link="https://images.unsplash.com/photo-1741627872533-52df24885303?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              link="/video/vertical/4.mp4"
             />
           </div>
           <div className="w-full flex justify-center py-[8vw] pb-0 relative z-[1]">
             <ReelCard
               index="5"
-              link="https://images.unsplash.com/photo-1741627872533-52df24885303?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              link="/video/vertical/5.mp4"
             />
           </div>
         </div>

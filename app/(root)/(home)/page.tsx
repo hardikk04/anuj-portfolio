@@ -140,7 +140,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <Showreel link="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"></Showreel>
+      <Showreel link="/img/temp.png"></Showreel>
       <section className="page3 w-full px-4 flex pt-[14vw]">
         <div className="role-model w-[32%] max-xl:w-[40%] max-md:w-[55%] h-[150vh] overflow-hidden">
           <Image
@@ -235,9 +235,9 @@ export default function Home() {
         </div>
       </section>
       <section className="page5 w-full relative pt-[10vw]">
-        <PortraitWorks link="/video/dan.mp4" />
-        <PortraitWorks link="/video/dan.mp4" />
-        <PortraitWorks link="/video/dan.mp4" />
+        <PortraitWorks link="/video/horizontal/1.mp4" />
+        <PortraitWorks link="/video/horizontal/2.mp4" />
+        <PortraitWorks link="/video/horizontal/3.mp4" />
       </section>
     </div>
   );

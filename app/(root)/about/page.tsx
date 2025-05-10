@@ -104,7 +104,7 @@ export default function About() {
           </h1>
         </div>
       </section>
-      <Showreel link="https://cdn.prod.website-files.com/666066030b1447405865fff8%2F677e96fde9e05c3a1f266504_Filip%20Felbar%20Showreel%20Background-transcode.mp4"></Showreel>
+      <Showreel link="/img/temp.png"></Showreel>
       <section className="page3 relative">
         <span className="bb sticky mix-blend-difference text-red-50 inline-block pl-4 top-1/2 -translate-y-1/2">
           Introduction
