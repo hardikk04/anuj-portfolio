@@ -1,20 +1,52 @@
-import Image from "next/image";
+"use client";
+
+import gsap from "gsap";
+import { useRef, useState } from "react";
 
 interface Props {
   link: string;
-  alt: string;
 }
-const PortraitWorks = ({ link, alt }: Props) => {
+const PortraitWorks = ({ link }: Props) => {
+  const [showControls, setShowControls] = useState<boolean>(false);
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  const handleVideoClick = () => {
+    setShowControls(true);
+
+    videoRef.current?.play();
+  };
   return (
-    <div className="h-screen w-full sticky top-0 left-0">
-      <Image
+    <div
+      onClick={handleVideoClick}
+      onMouseEnter={() => {
+        gsap.to(".mouse-follower", {
+          width: "10vh",
+          height: "10vh",
+        });
+        gsap.to(".mouse-follower>span", {
+          opacity: 1,
+        });
+      }}
+      onMouseLeave={() => {
+        gsap.to(".mouse-follower", {
+          width: "2.5vh",
+          height: "2.5vh",
+        });
+        gsap.to(".mouse-follower>span", {
+          opacity: 0,
+        });
+      }}
+      className="h-screen w-full sticky top-0 left-0"
+    >
+      <video
         className="w-full h-full object-cover"
         src={link}
-        alt={alt}
-        width={1000}
-        height={1000}
-      ></Image>
-      <div className="overlay absolute top-0 left-0 w-full h-screen bg-black/60 z-[1]"></div>
+        loop
+        muted
+        autoPlay
+        controls={showControls}
+        playsInline
+      ></video>
     </div>
   );
 };
