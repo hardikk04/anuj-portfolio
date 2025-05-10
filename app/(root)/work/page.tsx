@@ -38,18 +38,9 @@ export default function Work() {
         </div>
       </section>
       <section className="page2 w-full relative pt-[0vw]">
-        <PortraitWorks
-          alt="project video"
-          link="https://images.unsplash.com/photo-1742268351423-6d04402e9090?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <PortraitWorks
-          alt="project video"
-          link="https://images.unsplash.com/photo-1741781650657-ce002002a996?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
-        <PortraitWorks
-          alt="project video"
-          link="https://images.unsplash.com/photo-1696216997841-648877790ad4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        />
+        <PortraitWorks link="/video/dan.mp4" />
+        <PortraitWorks link="/video/dan.mp4" />
+        <PortraitWorks link="/video/dan.mp4" />
       </section>
       <section className="page3 relative px-4">
         <h2 className="textt text-[10vw] max-lg:text-[14vw] max-sm:text-[16vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 ">
