@@ -137,7 +137,7 @@ export default function Services() {
           </div>
         </div>
       </section>
-      <section className="page4 relative p-4">
+      {/* <section className="page4 relative p-4">
         <span className="textt sticky inline-block top-20 left-0 text-[18vw] max-lg:text-[15vw] max-md:text-[14vw] max-sm:text-[12vw] tracking-tighter leading-none">
           02
         </span>
@@ -196,7 +196,7 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="page6 h-screen w-full relative p-4 pt-[2vw] overflow-x-hidden max-sm:flex max-sm:flex-col max-sm:justify-center">
         <div className="title text-center pb-[4vw]">
           <h2 className="our-process text-[10vw] max-lg:text-[14vw] max-sm:text-[15vw] textt tracking-tighter font-extrabold">
