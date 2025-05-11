@@ -145,7 +145,7 @@ export default function Home() {
         <div className="role-model w-[32%] max-xl:w-[40%] max-md:w-[55%] h-[150vh] overflow-hidden">
           <Image
             className="h-full w-full object-cover"
-            src="https://cdn.prod.website-files.com/666066030b1447405865fff8/674ef4bbe8fcbec7ae18ca8b_Filip%20Felbar%20-%20Intro%20Image-p-1600.webp"
+            src="/img/anuj.jpg"
             alt=""
             height={1000}
             width={1000}

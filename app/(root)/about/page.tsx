@@ -6,7 +6,6 @@ import Showreel from "@/components/shared/Showreel";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
 import { useEffect } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -220,7 +219,7 @@ export default function About() {
           </span>
         </div>
       </section>
-      <section className="page6 relative p-4 h-screen max-lg:h-[90vh] max-md:h-[75vh] max-sm:h-[50vh] w-full bg">
+      {/* <section className="page6 relative p-4 h-screen max-lg:h-[90vh] max-md:h-[75vh] max-sm:h-[50vh] w-full bg">
         <Image
           className="w-full h-full object-cover"
           src="https://cdn.prod.website-files.com/666066030b1447405865fff8/674ef6cc80b693672fdac03c_Filip-Felbar-Domestika-Course.webp"
@@ -228,7 +227,7 @@ export default function About() {
           width={1000}
           height={1000}
         />
-      </section>
+      </section> */}
     </div>
   );
 }
