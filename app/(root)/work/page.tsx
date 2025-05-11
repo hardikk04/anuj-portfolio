@@ -3,13 +3,13 @@
 import TextSplit from "@/components/shared/animations/TextSplit";
 import PortraitWorks from "@/components/work/PortraitWorks";
 
-const ReelCard = dynamic(() => import("@/components/work/ReelCard"), {
-  ssr: false,
-});
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import dynamic from "next/dynamic";
 import React, { useEffect } from "react";
+const ReelCard = dynamic(() => import("@/components/work/ReelCard"), {
+  ssr: false,
+});
 
 export default function Work() {
   useGSAP(() => {
