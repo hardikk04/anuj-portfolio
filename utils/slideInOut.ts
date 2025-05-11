@@ -1,7 +1,12 @@
 import gsap from "gsap";
 
 export const slideInOut = (text: string) => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  setTimeout(() => {
+    window.scrollTo(0, 0);
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE
+    ScrollTrigger.refresh();
+  }, 0);
 
   gsap.to(".links", {
     height: "0",

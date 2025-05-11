@@ -2,14 +2,15 @@
 
 import TextSplit from "@/components/shared/animations/TextSplit";
 import PortraitWorks from "@/components/work/PortraitWorks";
-
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import dynamic from "next/dynamic";
-import React, { useEffect } from "react";
+
 const ReelCard = dynamic(() => import("@/components/work/ReelCard"), {
-  ssr: false,
+  ssr: true,
 });
+
+import React, { useEffect } from "react";
 
 export default function Work() {
   useGSAP(() => {
@@ -46,24 +47,24 @@ export default function Work() {
         <PortraitWorks link="/video/horizontal/2.mp4" />
         <PortraitWorks link="/video/horizontal/3.mp4" />
       </section>
-      <section className="page3 relative px-4">
+      <section className="page3 min-h-screen relative px-4">
         <h2 className="textt text-[10vw] max-lg:text-[14vw] max-sm:text-[16vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 ">
           reels
         </h2>
         <div className="reels w-full px-4 overflow-hidden relative z-[1]">
-          <div className="w-full flex py-[4vw]">
+          <div className="w-full h-[70vh] overflow-hidden flex">
             <ReelCard index="1" link="/video/vertical/1.mp4" />
           </div>
-          <div className="w-full flex justify-end py-[8vw] relative z-[1]">
+          <div className="w-full h-[70vh] overflow-hidden flex justify-end relative z-[1]">
             <ReelCard index="2" link="/video/vertical/2.mp4" />
           </div>
-          <div className="w-full flex py-[4vw] relative z-[1]">
+          <div className="w-full h-[70vh] overflow-hidden flex relative z-[1]">
             <ReelCard index="3" link="/video/vertical/3.mp4" />
           </div>
-          <div className="w-full flex justify-end py-[8vw] relative z-[1]">
+          <div className="w-full h-[70vh] overflow-hidden flex justify-end relative z-[1]">
             <ReelCard index="4" link="/video/vertical/4.mp4" />
           </div>
-          <div className="w-full flex justify-center py-[8vw] pb-0 relative z-[1]">
+          <div className="w-full h-[70vh] overflow-hidden flex justify-center pb-0 relative z-[1]">
             <ReelCard index="5" link="/video/vertical/5.mp4" />
           </div>
         </div>

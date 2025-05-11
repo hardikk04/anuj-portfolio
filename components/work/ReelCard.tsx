@@ -1,7 +1,7 @@
 const ReelCard = ({ link, index }: { link: string; index: string }) => {
   return (
     <div
-      className={`reel${index} h-[70vh] overflow-hidden`}
+      className={`reel${index} h-full overflow-hidden`}
     >
       <video
         className="w-full h-full object-contain"
