@@ -2,9 +2,13 @@
 
 import TextSplit from "@/components/shared/animations/TextSplit";
 import PortraitWorks from "@/components/work/PortraitWorks";
-import ReelCard from "@/components/work/ReelCard";
+
+const ReelCard = dynamic(() => import("@/components/work/ReelCard"), {
+  ssr: false,
+});
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import dynamic from "next/dynamic";
 import React, { useEffect } from "react";
 
 export default function Work() {
@@ -48,34 +52,19 @@ export default function Work() {
         </h2>
         <div className="reels w-full px-4 overflow-hidden relative z-[1]">
           <div className="w-full flex py-[4vw]">
-            <ReelCard
-              index="1"
-              link="/video/vertical/1.mp4"
-            />
+            <ReelCard index="1" link="/video/vertical/1.mp4" />
           </div>
           <div className="w-full flex justify-end py-[8vw] relative z-[1]">
-            <ReelCard
-              index="2"
-              link="/video/vertical/2.mp4"
-            />
+            <ReelCard index="2" link="/video/vertical/2.mp4" />
           </div>
           <div className="w-full flex py-[4vw] relative z-[1]">
-            <ReelCard
-              index="3"
-              link="/video/vertical/3.mp4"
-            />
+            <ReelCard index="3" link="/video/vertical/3.mp4" />
           </div>
           <div className="w-full flex justify-end py-[8vw] relative z-[1]">
-            <ReelCard
-              index="4"
-              link="/video/vertical/4.mp4"
-            />
+            <ReelCard index="4" link="/video/vertical/4.mp4" />
           </div>
           <div className="w-full flex justify-center py-[8vw] pb-0 relative z-[1]">
-            <ReelCard
-              index="5"
-              link="/video/vertical/5.mp4"
-            />
+            <ReelCard index="5" link="/video/vertical/5.mp4" />
           </div>
         </div>
       </section>
