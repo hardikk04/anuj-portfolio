@@ -146,7 +146,7 @@ export default function Home() {
           <Image
             className="h-full w-full object-cover"
             src="/img/anuj.jpg"
-            alt=""
+            alt="anuj-img"
             height={1000}
             width={1000}
           />
