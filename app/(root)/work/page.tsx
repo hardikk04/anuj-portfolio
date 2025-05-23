@@ -48,7 +48,7 @@ export default function Work() {
         <PortraitWorks link="/video/horizontal/3.mp4" />
       </section>
       <section className="page3 min-h-screen relative px-4">
-        <h2 className="textt text-[10vw] max-lg:text-[14vw] max-sm:text-[16vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 ">
+        <h2 className="textt text-[10vw] max-lg:text-[14vw] max-sm:text-[16vw] leading-none sticky inline-block pl-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
           reels
         </h2>
         <div className="reels w-full px-4 overflow-hidden relative z-[1]">
