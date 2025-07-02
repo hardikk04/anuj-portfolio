@@ -12,6 +12,7 @@ export const useLenis = () => {
       smoothWheel: true,
       easing: (t: number) => 1 - Math.pow(1 - t, 3),
     });
+    lenis.start();
 
     function raf(time: number) {
       lenis.raf(time);
@@ -29,6 +30,7 @@ export const useLenis = () => {
     resetLenis(); // Run when component mounts
 
     return () => {
+      lenis.stop();
       lenis.destroy(); // Cleanup on unmount
     };
   }, [pathname]); // 🔥 Runs when route changes
