@@ -109,7 +109,7 @@ export default function Services() {
             <span className="bb inline-block py-4">THE MAIN PART</span>
             <div>
               <h2 className="text-[6vw] max-lg:text-[8vw] max-md:text-[10vw] max-sm:text-[11vw] whitespace-nowrap textt tracking-tighter">
-                Product Design
+                Video Edits
               </h2>
               <p className="ll w-[90%] text-2xl max-lg:w-full max-md:text-lg">
                 My editing approach goes beyond mere visual assembly, focusing
